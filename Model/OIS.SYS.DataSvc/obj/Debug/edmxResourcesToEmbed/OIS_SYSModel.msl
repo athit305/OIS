@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OIS_SYSModelStoreContainer" CdmEntityContainer="OIS_SYSEntities">
+    <EntitySetMapping Name="TBM_USER">
+      <EntityTypeMapping TypeName="OIS_SYSModel.TBM_USER">
+        <MappingFragment StoreEntitySet="TBM_USER">
+          <ScalarProperty Name="LABSUPERVISOR_NO" ColumnName="LABSUPERVISOR_NO" />
+          <ScalarProperty Name="REGISTRATION_NO" ColumnName="REGISTRATION_NO" />
+          <ScalarProperty Name="USER_PIC" ColumnName="USER_PIC" />
+          <ScalarProperty Name="IDCARD" ColumnName="IDCARD" />
+          <ScalarProperty Name="SUBDIVISION_ID" ColumnName="SUBDIVISION_ID" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="PRENAME_ID" ColumnName="PRENAME_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FNAME_EN" ColumnName="FNAME_EN" />
+          <ScalarProperty Name="LNAME_EN" ColumnName="LNAME_EN" />
+          <ScalarProperty Name="FNAME_TH" ColumnName="FNAME_TH" />
+          <ScalarProperty Name="LNAME_TH" ColumnName="LNAME_TH" />
+          <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_SYS_GetMenu" FunctionName="OIS_SYSModel.Store.sp_SYS_GetMenu">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_SYSModel.sp_SYS_GetMenu_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+          <ScalarProperty Name="MENU_TYPE" ColumnName="MENU_TYPE" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+          <ScalarProperty Name="PARENT_SEQ" ColumnName="PARENT_SEQ" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SYS_UserLogin" FunctionName="OIS_SYSModel.Store.sp_SYS_UserLogin">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_SYSModel.sp_SYS_UserLogin_Result">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="USER_FNAME" ColumnName="USER_FNAME" />
+          <ScalarProperty Name="USER_LNAME" ColumnName="USER_LNAME" />
+          <ScalarProperty Name="USER_FULLNAME" ColumnName="USER_FULLNAME" />
+          <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="DIVISION_NAME" ColumnName="DIVISION_NAME" />
+          <ScalarProperty Name="SUBDIVISION_ID" ColumnName="SUBDIVISION_ID" />
+          <ScalarProperty Name="SUBDIVISION_NAME" ColumnName="SUBDIVISION_NAME" />
+          <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+          <ScalarProperty Name="POSITION_NAME" ColumnName="POSITION_NAME" />
+          <ScalarProperty Name="LAST_LOGIN" ColumnName="LAST_LOGIN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TBM_MENU">
+      <EntityTypeMapping TypeName="OIS_SYSModel.TBM_MENU">
+        <MappingFragment StoreEntitySet="TBM_MENU">
+          <ScalarProperty Name="ICON_NAME" ColumnName="ICON_NAME" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="MENU_TYPE" ColumnName="MENU_TYPE" />
+          <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_SYS02_GetUserProfile" FunctionName="OIS_SYSModel.Store.sp_SYS02_GetUserProfile">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_SYSModel.sp_SYS02_GetUserProfile_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FNAME_EN" ColumnName="FNAME_EN" />
+          <ScalarProperty Name="LNAME_EN" ColumnName="LNAME_EN" />
+          <ScalarProperty Name="FNAME_TH" ColumnName="FNAME_TH" />
+          <ScalarProperty Name="LNAME_TH" ColumnName="LNAME_TH" />
+          <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="PASS_NEW" ColumnName="PASS_NEW" />
+          <ScalarProperty Name="PASS_CONFIRM" ColumnName="PASS_CONFIRM" />
+          <ScalarProperty Name="PRENAME_ID" ColumnName="PRENAME_ID" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="SUBDIVISION_ID" ColumnName="SUBDIVISION_ID" />
+          <ScalarProperty Name="IDCARD" ColumnName="IDCARD" />
+          <ScalarProperty Name="USER_PIC" ColumnName="USER_PIC" />
+          <ScalarProperty Name="REGISTRATION_NO" ColumnName="REGISTRATION_NO" />
+          <ScalarProperty Name="LABSUPERVISOR_NO" ColumnName="LABSUPERVISOR_NO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SYS02_SaveUserProfile" FunctionName="OIS_SYSModel.Store.sp_SYS02_SaveUserProfile" />
+    <EntitySetMapping Name="TBS_SYSTEM_CONFIG">
+      <EntityTypeMapping TypeName="OIS_SYSModel.TBS_SYSTEM_CONFIG">
+        <MappingFragment StoreEntitySet="TBS_SYSTEM_CONFIG">
+          <ScalarProperty Name="REPORT_REV_WPA" ColumnName="REPORT_REV_WPA" />
+          <ScalarProperty Name="REPORT_REV_WPL" ColumnName="REPORT_REV_WPL" />
+          <ScalarProperty Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" ColumnName="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" />
+          <ScalarProperty Name="DEFAULT_REPORT_WPA_REGISTRATION_ID" ColumnName="DEFAULT_REPORT_WPA_REGISTRATION_ID" />
+          <ScalarProperty Name="DEFAULT_REPORT_REGISTRATION_ID" ColumnName="DEFAULT_REPORT_REGISTRATION_ID" />
+          <ScalarProperty Name="DEFAULT_REPORT_LAB_SUPERVISOR_ID" ColumnName="DEFAULT_REPORT_LAB_SUPERVISOR_ID" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="IS_UPDATE_AUTOUPDATE" ColumnName="IS_UPDATE_AUTOUPDATE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_SYS001_GetSystemConfig" FunctionName="OIS_SYSModel.Store.sp_SYS001_GetSystemConfig">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_SYSModel.sp_SYS001_GetSystemConfig_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IS_UPDATE_AUTOUPDATE" ColumnName="IS_UPDATE_AUTOUPDATE" />
+          <ScalarProperty Name="DEFAULT_REPORT_LAB_SUPERVISOR_ID" ColumnName="DEFAULT_REPORT_LAB_SUPERVISOR_ID" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEFAULT_REPORT_LAB_SUPERVISOR_NAME" ColumnName="DEFAULT_REPORT_LAB_SUPERVISOR_NAME" />
+          <ScalarProperty Name="DEFAULT_REPORT_REGISTRATION_ID" ColumnName="DEFAULT_REPORT_REGISTRATION_ID" />
+          <ScalarProperty Name="DEFAULT_REPORT_REGISTRATION_NAME" ColumnName="DEFAULT_REPORT_REGISTRATION_NAME" />
+          <ScalarProperty Name="DEFAULT_REPORT_WPA_REGISTRATION_ID" ColumnName="DEFAULT_REPORT_WPA_REGISTRATION_ID" />
+          <ScalarProperty Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" ColumnName="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" />
+          <ScalarProperty Name="DEFAULT_REPORT_WPA_REGISTRATION_NAME" ColumnName="DEFAULT_REPORT_WPA_REGISTRATION_NAME" />
+          <ScalarProperty Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_NAME" ColumnName="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_NAME" />
+          <ScalarProperty Name="REPORT_REV_WPL" ColumnName="REPORT_REV_WPL" />
+          <ScalarProperty Name="REPORT_REV_WPA" ColumnName="REPORT_REV_WPA" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_SYS001_SaveSystemConfig" FunctionName="OIS_SYSModel.Store.sp_SYS001_SaveSystemConfig" />
+    <FunctionImportMapping FunctionImportName="sp_SYS_UserLogout" FunctionName="OIS_SYSModel.Store.sp_SYS_UserLogout" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1006 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86967651-89F1-456A-B9FE-9E098AEE6D67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OIS</RootNamespace>
+    <AssemblyName>OIS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\athit\Desktop\p\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1494117352_Registration.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6AFE222B7C028E23FAF43F2AD6BE1F8297083FC7</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OIS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AutoMapper.6.0.2\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FarPoint.Win">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\FarPoint Technologies\Spread.WinForms.v25 for Visual Studio 2005\v2.5.2005\Bin\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\FarPoint Technologies\Spread.WinForms.v25 for Visual Studio 2005\v2.5.2005\Bin\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseViews\Controls\rButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rDataGridViewDateTime.cs" />
+    <Compile Include="BaseViews\Controls\rDateTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rNumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rSearchTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rTimeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rToolStripItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\Controls\rToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseViews\rBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseViews\rBaseDialog.Designer.cs">
+      <DependentUpon>rBaseDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseViews\rBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseViews\rBaseUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseViews\rBaseUC.Designer.cs">
+      <DependentUpon>rBaseUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalVariable.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingForm.Designer.cs">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\HelpFillDataDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\HelpFillDataDialog.Designer.cs">
+      <DependentUpon>HelpFillDataDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ParameterAnalysisDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ParameterAnalysisDialog.Designer.cs">
+      <DependentUpon>ParameterAnalysisDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ToolAnalysisDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ToolAnalysisDialog.Designer.cs">
+      <DependentUpon>ToolAnalysisDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ToolPickDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ToolPickDialog.Designer.cs">
+      <DependentUpon>ToolPickDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\MethodAnalysisDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\MethodAnalysisDialog.Designer.cs">
+      <DependentUpon>MethodAnalysisDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ProjectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ProjectDialog.Designer.cs">
+      <DependentUpon>ProjectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\CustomerLocationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\CustomerLocationDialog.Designer.cs">
+      <DependentUpon>CustomerLocationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\UserDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\UserDialog.Designer.cs">
+      <DependentUpon>UserDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\ExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\ExportDialog.Designer.cs">
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\InstrumentDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\InstrumentDialog.Designer.cs">
+      <DependentUpon>InstrumentDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\CustomerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\CustomerDialog.Designer.cs">
+      <DependentUpon>CustomerDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dialogs\StandardLightDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Dialogs\StandardLightDialog.Designer.cs">
+      <DependentUpon>StandardLightDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS101_User.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS101_User.Designer.cs">
+      <DependentUpon>MAS101_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS101_UserEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS101_UserEntry.Designer.cs">
+      <DependentUpon>MAS101_UserEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS102_DivisionEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS102_DivisionEntry.Designer.cs">
+      <DependentUpon>MAS102_DivisionEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS103_SubDivision.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS103_SubDivision.Designer.cs">
+      <DependentUpon>MAS103_SubDivision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS102_Division.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS102_Division.Designer.cs">
+      <DependentUpon>MAS102_Division.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS103_SubDivisionEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS103_SubDivisionEntry.Designer.cs">
+      <DependentUpon>MAS103_SubDivisionEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS104_Position.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS104_Position.Designer.cs">
+      <DependentUpon>MAS104_Position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS104_PositionEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS104_PositionEntry.Designer.cs">
+      <DependentUpon>MAS104_PositionEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS105_PreName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS105_PreName.Designer.cs">
+      <DependentUpon>MAS105_PreName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS105_PreNameEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS105_PreNameEntry.Designer.cs">
+      <DependentUpon>MAS105_PreNameEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS106_Group.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS106_Group.Designer.cs">
+      <DependentUpon>MAS106_Group.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS106_GroupEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS106_GroupEntry.Designer.cs">
+      <DependentUpon>MAS106_GroupEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS201_Customer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS201_Customer.Designer.cs">
+      <DependentUpon>MAS201_Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS201_CustomerEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS201_CustomerEntry.Designer.cs">
+      <DependentUpon>MAS201_CustomerEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS202_CustomerProject.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS202_CustomerProject.Designer.cs">
+      <DependentUpon>MAS202_CustomerProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS202_CustomerProjectEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS202_CustomerProjectEntry.Designer.cs">
+      <DependentUpon>MAS202_CustomerProjectEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS203_Province.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS203_Province.Designer.cs">
+      <DependentUpon>MAS203_Province.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS203_ProvinceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS203_ProvinceEntry.Designer.cs">
+      <DependentUpon>MAS203_ProvinceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS309_ToolAnalysisEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS309_ToolAnalysisEntry.Designer.cs">
+      <DependentUpon>MAS309_ToolAnalysisEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS308_ToolPickEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS308_ToolPickEntry.Designer.cs">
+      <DependentUpon>MAS308_ToolPickEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS310_LabExtEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS310_LabExtEntry.Designer.cs">
+      <DependentUpon>MAS310_LabExtEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS309_ToolAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS309_ToolAnalysis.Designer.cs">
+      <DependentUpon>MAS309_ToolAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS308_ToolPick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS308_ToolPick.Designer.cs">
+      <DependentUpon>MAS308_ToolPick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS310_LabExt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS310_LabExt.Designer.cs">
+      <DependentUpon>MAS310_LabExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS301_Unit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS301_Unit.Designer.cs">
+      <DependentUpon>MAS301_Unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS301_UnitEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS301_UnitEntry.Designer.cs">
+      <DependentUpon>MAS301_UnitEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS302_StandardLightIntensity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS302_StandardLightIntensity.Designer.cs">
+      <DependentUpon>MAS302_StandardLightIntensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS302_StandardLightIntensityEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS302_StandardLightIntensityEntry.Designer.cs">
+      <DependentUpon>MAS302_StandardLightIntensityEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS303_Instrument.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS303_Instrument.Designer.cs">
+      <DependentUpon>MAS303_Instrument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS304_MethodAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS304_MethodAnalysis.Designer.cs">
+      <DependentUpon>MAS304_MethodAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS304_MethodAnalysisEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS304_MethodAnalysisEntry.Designer.cs">
+      <DependentUpon>MAS304_MethodAnalysisEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS305_ParameterAnalysis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS305_ParameterAnalysis.Designer.cs">
+      <DependentUpon>MAS305_ParameterAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS305_ParameterAnalysisEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS305_ParameterAnalysisEntry.Designer.cs">
+      <DependentUpon>MAS305_ParameterAnalysisEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS306_ConditionLight.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS306_ConditionLight.Designer.cs">
+      <DependentUpon>MAS306_ConditionLight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS306_ConditionLightEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS306_ConditionLightEntry.Designer.cs">
+      <DependentUpon>MAS306_ConditionLightEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS303_InstrumentEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS303_InstrumentEntry.Designer.cs">
+      <DependentUpon>MAS303_InstrumentEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS307_InstitutionStandard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS307_InstitutionStandard.Designer.cs">
+      <DependentUpon>MAS307_InstitutionStandard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Master\MAS307_InstitutionStandardEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Master\MAS307_InstitutionStandardEntry.Designer.cs">
+      <DependentUpon>MAS307_InstitutionStandardEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT001_WorkPlaceLightIntensityReport_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_Instrument.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT001_WorkPlaceLightIntensityReport_Instrument.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\RPT002_WorkPlaceAirQualityReport_User.cs">
+      <DependentUpon>RPT002_WorkPlaceAirQualityReport_User.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_User.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT001_WorkPlaceLightIntensityReport_User.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Reports\RPT002_Process.cs" />
+    <Compile Include="Views\Reports\RPT001_Process.cs" />
+    <Compile Include="Views\Reports\RPT002_WorkPlaceAirQualityReport.cs">
+      <DependentUpon>RPT002_WorkPlaceAirQualityReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_2.cs">
+      <DependentUpon>RPT001_WorkPlaceLightIntensityReport_2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Views\Reports\RPT002_WorkPlaceAirQualityReport_Remark.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT002_WorkPlaceAirQualityReport_Remark.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity.Designer.cs">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQuality_Detail_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQuality_Detail_Dialog.Designer.cs">
+      <DependentUpon>RPT002_WorkPlaceAirQuality_Detail_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity_Detail_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity_Detail_Dialog.Designer.cs">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity_Detail_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQuality_User_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQuality_User_Dialog.Designer.cs">
+      <DependentUpon>RPT002_WorkPlaceAirQuality_User_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity_User_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity_User_Dialog.Designer.cs">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity_User_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity_Instrument_Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensity_Instrument_Dialog.Designer.cs">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity_Instrument_Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQualityEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQualityEntry.Designer.cs">
+      <DependentUpon>RPT002_WorkPlaceAirQualityEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensityEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT001_WorkPlaceLightIntensityEntry.Designer.cs">
+      <DependentUpon>RPT001_WorkPlaceLightIntensityEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQuality.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\Report\RPT002_WorkPlaceAirQuality.Designer.cs">
+      <DependentUpon>RPT002_WorkPlaceAirQuality.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\System\SYS001_SystemConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\System\SYS001_SystemConfig.Designer.cs">
+      <DependentUpon>SYS001_SystemConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\System\SYS002_UserProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\System\SYS002_UserProfile.Designer.cs">
+      <DependentUpon>SYS002_UserProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaseViews\Controls\rDataGridView.resx">
+      <DependentUpon>rDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseViews\Controls\rDateTextBox.resx">
+      <DependentUpon>rDateTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseViews\Controls\rTextBox.resx">
+      <DependentUpon>rTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseViews\rBaseDialog.resx">
+      <DependentUpon>rBaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseViews\rBaseForm.resx">
+      <DependentUpon>rBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseViews\rBaseUC.resx">
+      <DependentUpon>rBaseUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SettingForm.resx">
+      <DependentUpon>SettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\HelpFillDataDialog.resx">
+      <DependentUpon>HelpFillDataDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ParameterAnalysisDialog.resx">
+      <DependentUpon>ParameterAnalysisDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ToolAnalysisDialog.resx">
+      <DependentUpon>ToolAnalysisDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ToolPickDialog.resx">
+      <DependentUpon>ToolPickDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\MethodAnalysisDialog.resx">
+      <DependentUpon>MethodAnalysisDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ProjectDialog.resx">
+      <DependentUpon>ProjectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\CustomerLocationDialog.resx">
+      <DependentUpon>CustomerLocationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\UserDialog.resx">
+      <DependentUpon>UserDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\ExportDialog.resx">
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\InstrumentDialog.resx">
+      <DependentUpon>InstrumentDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\CustomerDialog.resx">
+      <DependentUpon>CustomerDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Dialogs\StandardLightDialog.resx">
+      <DependentUpon>StandardLightDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS101_User.resx">
+      <DependentUpon>MAS101_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS101_UserEntry.resx">
+      <DependentUpon>MAS101_UserEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS102_DivisionEntry.resx">
+      <DependentUpon>MAS102_DivisionEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS103_SubDivision.resx">
+      <DependentUpon>MAS103_SubDivision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS102_Division.resx">
+      <DependentUpon>MAS102_Division.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS103_SubDivisionEntry.resx">
+      <DependentUpon>MAS103_SubDivisionEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS104_Position.resx">
+      <DependentUpon>MAS104_Position.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS104_PositionEntry.resx">
+      <DependentUpon>MAS104_PositionEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS105_PreName.resx">
+      <DependentUpon>MAS105_PreName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS105_PreNameEntry.resx">
+      <DependentUpon>MAS105_PreNameEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS106_Group.resx">
+      <DependentUpon>MAS106_Group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS106_GroupEntry.resx">
+      <DependentUpon>MAS106_GroupEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS201_Customer.resx">
+      <DependentUpon>MAS201_Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS201_CustomerEntry.resx">
+      <DependentUpon>MAS201_CustomerEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS202_CustomerProject.resx">
+      <DependentUpon>MAS202_CustomerProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS202_CustomerProjectEntry.resx">
+      <DependentUpon>MAS202_CustomerProjectEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS203_Province.resx">
+      <DependentUpon>MAS203_Province.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS203_ProvinceEntry.resx">
+      <DependentUpon>MAS203_ProvinceEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS309_ToolAnalysisEntry.resx">
+      <DependentUpon>MAS309_ToolAnalysisEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS308_ToolPickEntry.resx">
+      <DependentUpon>MAS308_ToolPickEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS310_LabExtEntry.resx">
+      <DependentUpon>MAS310_LabExtEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS309_ToolAnalysis.resx">
+      <DependentUpon>MAS309_ToolAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS308_ToolPick.resx">
+      <DependentUpon>MAS308_ToolPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS310_LabExt.resx">
+      <DependentUpon>MAS310_LabExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS301_Unit.resx">
+      <DependentUpon>MAS301_Unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS301_UnitEntry.resx">
+      <DependentUpon>MAS301_UnitEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS302_StandardLightIntensity.resx">
+      <DependentUpon>MAS302_StandardLightIntensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS302_StandardLightIntensityEntry.resx">
+      <DependentUpon>MAS302_StandardLightIntensityEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS303_Instrument.resx">
+      <DependentUpon>MAS303_Instrument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS304_MethodAnalysis.resx">
+      <DependentUpon>MAS304_MethodAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS304_MethodAnalysisEntry.resx">
+      <DependentUpon>MAS304_MethodAnalysisEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS305_ParameterAnalysis.resx">
+      <DependentUpon>MAS305_ParameterAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS305_ParameterAnalysisEntry.resx">
+      <DependentUpon>MAS305_ParameterAnalysisEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS306_ConditionLight.resx">
+      <DependentUpon>MAS306_ConditionLight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS306_ConditionLightEntry.resx">
+      <DependentUpon>MAS306_ConditionLightEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS303_InstrumentEntry.resx">
+      <DependentUpon>MAS303_InstrumentEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS307_InstitutionStandard.resx">
+      <DependentUpon>MAS307_InstitutionStandard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Master\MAS307_InstitutionStandardEntry.resx">
+      <DependentUpon>MAS307_InstitutionStandardEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_Instrument.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT001_WorkPlaceLightIntensityReport_Instrument.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT002_WorkPlaceAirQualityReport_User.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT002_WorkPlaceAirQualityReport_User.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_User.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT001_WorkPlaceLightIntensityReport_User.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT002_WorkPlaceAirQualityReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT002_WorkPlaceAirQualityReport.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT001_WorkPlaceLightIntensityReport_2.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT001_WorkPlaceLightIntensityReport_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <LastGenOutput>RPT001_WorkPlaceLightIntensityReport_11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Reports\RPT002_WorkPlaceAirQualityReport_Remark.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT002_WorkPlaceAirQualityReport_Remark.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT001_WorkPlaceLightIntensity.resx">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT002_WorkPlaceAirQuality_Detail_Dialog.resx">
+      <DependentUpon>RPT002_WorkPlaceAirQuality_Detail_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT001_WorkPlaceLightIntensity_Detail_Dialog.resx">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity_Detail_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT002_WorkPlaceAirQuality_User_Dialog.resx">
+      <DependentUpon>RPT002_WorkPlaceAirQuality_User_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT001_WorkPlaceLightIntensity_User_Dialog.resx">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity_User_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT001_WorkPlaceLightIntensity_Instrument_Dialog.resx">
+      <DependentUpon>RPT001_WorkPlaceLightIntensity_Instrument_Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT002_WorkPlaceAirQualityEntry.resx">
+      <DependentUpon>RPT002_WorkPlaceAirQualityEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT001_WorkPlaceLightIntensityEntry.resx">
+      <DependentUpon>RPT001_WorkPlaceLightIntensityEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Report\RPT002_WorkPlaceAirQuality.resx">
+      <DependentUpon>RPT002_WorkPlaceAirQuality.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\System\SYS001_SystemConfig.resx">
+      <DependentUpon>SYS001_SystemConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\System\SYS002_UserProfile.resx">
+      <DependentUpon>SYS002_UserProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OIS_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.Criteria.MAS304_MethodAnalysis_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.Criteria.MAS305_ParameterAnalysis_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.Criteria.MAS307_InstitutionSTD_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.Criteria.MAS308_ToolPick_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.Criteria.MAS309_ToolAnalysis_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.Criteria.MAS310_LabExt_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS101_GetUser_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS102_GetDivision_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS103_GetSubDivision_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS104_GetPosition_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS105_GetPreName_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS106_GetGroup_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS201_GetCustomer_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS202_GetCustomerProject_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS203_GetProvince_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS301_GetUnit_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS302_GetSTDLight_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS303_GetInstrument_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS304_GetMethodAnalysis_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS305_GetParameterAnalysis_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS306_GetConditionLight_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS307_GetInstitutionSTD_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS308_GetToolPick_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS309_GetToolAnalysis_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.MAS.DTO.sp_MAS310_GetLabExt_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.Criteria.RPT001_WorkPlaceLight_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.Criteria.RPT002_WorkPlaceAir_Criteria.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.RPT001_WorkPlaceLightDTO.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.RPT002_WorkPlaceAirDTO.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.sp_RPT001_GetWorkPlaceLightDt_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.sp_RPT001_GetWorkPlaceLightReport_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.sp_RPT001_GetWorkPlaceLight_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.RPT.DTO.sp_RPT002_GetWorkPlaceAir_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.SYS.DTO.sp_SYS001_GetSystemConfig_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.SYS.DTO.sp_SYS02_GetUserProfile_Result.datasource" />
+    <None Include="Properties\DataSources\OIS.SYS.DTO.TBS_SYSTEM_CONFIG.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Views\Reports\RPT001_Template.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\Reports\RPT002_Template.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\OIS.Common\OIS.Common.csproj">
+      <Project>{c2ec7c43-2350-4008-aac8-987c427d0460}</Project>
+      <Name>OIS.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\OIS.Definition\OIS.Definition.csproj">
+      <Project>{8b4c3f04-9687-4d3e-a308-7ca159bcc167}</Project>
+      <Name>OIS.Definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contract\OIS.MAS.DTO\OIS.MAS.DTO.csproj">
+      <Project>{02472bb3-5ea5-427b-b661-e3aa46296e83}</Project>
+      <Name>OIS.MAS.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contract\OIS.RPT.DTO\OIS.RPT.DTO.csproj">
+      <Project>{ff97d28e-af30-4fa4-b09a-5226b3369545}</Project>
+      <Name>OIS.RPT.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contract\OIS.SYS.DTO\OIS.SYS.DTO.csproj">
+      <Project>{b98c7558-17b1-45df-92e3-494bf8716cd4}</Project>
+      <Name>OIS.SYS.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ViewModel\OIS.ViewModel\OIS.ViewModel.csproj">
+      <Project>{abe6aa2b-3374-4d12-9dbc-a3e06898eb9d}</Project>
+      <Name>OIS.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1494117352_Registration.ico" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\Add.bmp" />
+    <None Include="Resources\1497011879_Refresh.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,487 @@
+﻿namespace OIS.Views
+{
+    partial class RPT002_WorkPlaceAirQuality
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.gbResult = new OIS.BaseViews.rGroupBox();
+            this.gvResult = new OIS.BaseViews.rDataGridView();
+            this.ANALYSIS_NUMBER = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CUSTOMER_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CUSTOMER_PROJECT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ANALYTICAL_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SAMPLING_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CRT_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CRT_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CRT_MACHINE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UPD_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UPD_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UPD_MACHINE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DEL_NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DEL_DATE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DEL_MACHINE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CRT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UPD_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DEL_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gbCriteria = new OIS.BaseViews.rGroupBox();
+            this.lblJobNo = new OIS.BaseViews.rLabel();
+            this.txtJobNo = new OIS.BaseViews.rTextBox();
+            this.chkShowDeleteRecord = new System.Windows.Forms.CheckBox();
+            this.txtCustomer = new OIS.BaseViews.rSearchTextBox();
+            this.txtMeasuredBy = new OIS.BaseViews.rSearchTextBox();
+            this.lblMeasuredTo = new OIS.BaseViews.rLabel();
+            this.dtMeasuredDateTo = new OIS.BaseViews.rDateTextBox();
+            this.lblMeasuredBy = new OIS.BaseViews.rLabel();
+            this.lblMeasuredDate = new OIS.BaseViews.rLabel();
+            this.dtMeasuredDate = new OIS.BaseViews.rDateTextBox();
+            this.lblModel = new OIS.BaseViews.rLabel();
+            this.lblReportNumber = new OIS.BaseViews.rLabel();
+            this.txtReportNumber = new OIS.BaseViews.rTextBox();
+            this.lblHeader = new OIS.BaseViews.rLabel();
+            this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdSource)).BeginInit();
+            this.gbResult.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gvResult)).BeginInit();
+            this.gbCriteria.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Controls.Add(this.gbResult);
+            this.pnlMain.Controls.Add(this.gbCriteria);
+            this.pnlMain.Controls.Add(this.lblHeader);
+            // 
+            // bdSource
+            // 
+            this.bdSource.DataSource = typeof(OIS.RPT.DTO.Criteria.RPT002_WorkPlaceAir_Criteria);
+            // 
+            // gbResult
+            // 
+            this.gbResult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbResult.Controls.Add(this.gvResult);
+            this.gbResult.Location = new System.Drawing.Point(9, 176);
+            this.gbResult.Name = "gbResult";
+            this.gbResult.Size = new System.Drawing.Size(846, 263);
+            this.gbResult.TabIndex = 13;
+            this.gbResult.TabStop = false;
+            this.gbResult.Text = "รายการ";
+            // 
+            // gvResult
+            // 
+            this.gvResult.AllowDrop = true;
+            this.gvResult.AllowUserToAddRows = false;
+            this.gvResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gvResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gvResult.ColumnHeadersHeight = 40;
+            this.gvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.gvResult.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ANALYSIS_NUMBER,
+            this.CUSTOMER_NAME,
+            this.CUSTOMER_PROJECT_NAME,
+            this.ANALYTICAL_DATE,
+            this.SAMPLING_NAME,
+            this.CRT_NAME,
+            this.CRT_DATE,
+            this.CRT_MACHINE,
+            this.UPD_NAME,
+            this.UPD_DATE,
+            this.UPD_MACHINE,
+            this.DEL_NAME,
+            this.DEL_DATE,
+            this.DEL_MACHINE,
+            this.ID,
+            this.CRT_ID,
+            this.UPD_ID,
+            this.DEL_ID});
+            this.gvResult.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvResult.EnterToAddRow = true;
+            this.gvResult.Location = new System.Drawing.Point(3, 19);
+            this.gvResult.Name = "gvResult";
+            this.gvResult.Size = new System.Drawing.Size(840, 241);
+            this.gvResult.TabIndex = 0;
+            this.gvResult.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvResult_CellDoubleClick);
+            // 
+            // ANALYSIS_NUMBER
+            // 
+            this.ANALYSIS_NUMBER.HeaderText = "Analysis Numer";
+            this.ANALYSIS_NUMBER.Name = "ANALYSIS_NUMBER";
+            // 
+            // CUSTOMER_NAME
+            // 
+            this.CUSTOMER_NAME.HeaderText = "Customer";
+            this.CUSTOMER_NAME.Name = "CUSTOMER_NAME";
+            // 
+            // CUSTOMER_PROJECT_NAME
+            // 
+            this.CUSTOMER_PROJECT_NAME.HeaderText = "Project";
+            this.CUSTOMER_PROJECT_NAME.Name = "CUSTOMER_PROJECT_NAME";
+            // 
+            // ANALYTICAL_DATE
+            // 
+            this.ANALYTICAL_DATE.HeaderText = "Analytical Date";
+            this.ANALYTICAL_DATE.Name = "ANALYTICAL_DATE";
+            // 
+            // SAMPLING_NAME
+            // 
+            this.SAMPLING_NAME.HeaderText = "Sampling By";
+            this.SAMPLING_NAME.Name = "SAMPLING_NAME";
+            // 
+            // CRT_NAME
+            // 
+            this.CRT_NAME.HeaderText = "ผู้สร้าง";
+            this.CRT_NAME.Name = "CRT_NAME";
+            // 
+            // CRT_DATE
+            // 
+            this.CRT_DATE.HeaderText = "วันที่สร้าง";
+            this.CRT_DATE.Name = "CRT_DATE";
+            // 
+            // CRT_MACHINE
+            // 
+            this.CRT_MACHINE.HeaderText = "เครื่องที่สร้าง";
+            this.CRT_MACHINE.Name = "CRT_MACHINE";
+            // 
+            // UPD_NAME
+            // 
+            this.UPD_NAME.HeaderText = "ผู้แก้ไข";
+            this.UPD_NAME.Name = "UPD_NAME";
+            // 
+            // UPD_DATE
+            // 
+            this.UPD_DATE.HeaderText = "วันที่แก้ไข";
+            this.UPD_DATE.Name = "UPD_DATE";
+            // 
+            // UPD_MACHINE
+            // 
+            this.UPD_MACHINE.HeaderText = "เครื่องที่แก้ไข";
+            this.UPD_MACHINE.Name = "UPD_MACHINE";
+            // 
+            // DEL_NAME
+            // 
+            this.DEL_NAME.HeaderText = "ผู้ยกเลิก";
+            this.DEL_NAME.Name = "DEL_NAME";
+            // 
+            // DEL_DATE
+            // 
+            this.DEL_DATE.HeaderText = "วันที่ยกเลิก";
+            this.DEL_DATE.Name = "DEL_DATE";
+            // 
+            // DEL_MACHINE
+            // 
+            this.DEL_MACHINE.HeaderText = "เครื่องที่ยกเลิก";
+            this.DEL_MACHINE.Name = "DEL_MACHINE";
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // CRT_ID
+            // 
+            this.CRT_ID.HeaderText = "CRT_ID";
+            this.CRT_ID.Name = "CRT_ID";
+            // 
+            // UPD_ID
+            // 
+            this.UPD_ID.HeaderText = "UPD_ID";
+            this.UPD_ID.Name = "UPD_ID";
+            // 
+            // DEL_ID
+            // 
+            this.DEL_ID.HeaderText = "DEL_ID";
+            this.DEL_ID.Name = "DEL_ID";
+            // 
+            // gbCriteria
+            // 
+            this.gbCriteria.Controls.Add(this.lblJobNo);
+            this.gbCriteria.Controls.Add(this.txtJobNo);
+            this.gbCriteria.Controls.Add(this.chkShowDeleteRecord);
+            this.gbCriteria.Controls.Add(this.txtCustomer);
+            this.gbCriteria.Controls.Add(this.txtMeasuredBy);
+            this.gbCriteria.Controls.Add(this.lblMeasuredTo);
+            this.gbCriteria.Controls.Add(this.dtMeasuredDateTo);
+            this.gbCriteria.Controls.Add(this.lblMeasuredBy);
+            this.gbCriteria.Controls.Add(this.lblMeasuredDate);
+            this.gbCriteria.Controls.Add(this.dtMeasuredDate);
+            this.gbCriteria.Controls.Add(this.lblModel);
+            this.gbCriteria.Controls.Add(this.lblReportNumber);
+            this.gbCriteria.Controls.Add(this.txtReportNumber);
+            this.gbCriteria.Location = new System.Drawing.Point(9, 36);
+            this.gbCriteria.Name = "gbCriteria";
+            this.gbCriteria.Size = new System.Drawing.Size(846, 134);
+            this.gbCriteria.TabIndex = 12;
+            this.gbCriteria.TabStop = false;
+            this.gbCriteria.Text = "ค้นหา";
+            // 
+            // lblJobNo
+            // 
+            this.lblJobNo.AutoSize = true;
+            this.lblJobNo.Location = new System.Drawing.Point(75, 54);
+            this.lblJobNo.Name = "lblJobNo";
+            this.lblJobNo.Size = new System.Drawing.Size(59, 16);
+            this.lblJobNo.TabIndex = 62;
+            this.lblJobNo.Text = "Job No. :";
+            this.lblJobNo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txtJobNo
+            // 
+            this.txtJobNo.DataBindings.Add(new System.Windows.Forms.Binding("TextValue", this.bdSource, "JOB_NO", true));
+            this.txtJobNo.IsRequired = false;
+            this.txtJobNo.Location = new System.Drawing.Point(140, 51);
+            this.txtJobNo.MinLength = 0;
+            this.txtJobNo.Name = "txtJobNo";
+            this.txtJobNo.Size = new System.Drawing.Size(250, 23);
+            this.txtJobNo.TabIndex = 4;
+            this.txtJobNo.TextValue = null;
+            // 
+            // chkShowDeleteRecord
+            // 
+            this.chkShowDeleteRecord.AutoSize = true;
+            this.chkShowDeleteRecord.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this.bdSource, "SHOW_DELETE_RECORD", true));
+            this.chkShowDeleteRecord.Location = new System.Drawing.Point(140, 109);
+            this.chkShowDeleteRecord.Name = "chkShowDeleteRecord";
+            this.chkShowDeleteRecord.Size = new System.Drawing.Size(158, 20);
+            this.chkShowDeleteRecord.TabIndex = 7;
+            this.chkShowDeleteRecord.Text = "แสดงรายการที่ถูกยกเลิก";
+            this.chkShowDeleteRecord.UseVisualStyleBackColor = true;
+            // 
+            // txtCustomer
+            // 
+            this.txtCustomer.BackColor = System.Drawing.SystemColors.Info;
+            this.txtCustomer.CausesValidation = false;
+            this.txtCustomer.DataBindings.Add(new System.Windows.Forms.Binding("IntValue", this.bdSource, "CUSTOMER_ID", true));
+            this.txtCustomer.IntValue = null;
+            this.txtCustomer.IsRequired = false;
+            this.txtCustomer.Location = new System.Drawing.Point(140, 80);
+            this.txtCustomer.MinLength = 0;
+            this.txtCustomer.Name = "txtCustomer";
+            this.txtCustomer.OptionalTextBox = null;
+            this.txtCustomer.SearchType = OIS.BaseViews.eSearchType.Customer;
+            this.txtCustomer.Size = new System.Drawing.Size(250, 23);
+            this.txtCustomer.StringValue = null;
+            this.txtCustomer.TabIndex = 5;
+            this.txtCustomer.TextValue = null;
+            // 
+            // txtMeasuredBy
+            // 
+            this.txtMeasuredBy.BackColor = System.Drawing.SystemColors.Info;
+            this.txtMeasuredBy.CausesValidation = false;
+            this.txtMeasuredBy.DataBindings.Add(new System.Windows.Forms.Binding("StringValue", this.bdSource, "SAMPING_BY", true));
+            this.txtMeasuredBy.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtMeasuredBy.IntValue = null;
+            this.txtMeasuredBy.IsRequired = false;
+            this.txtMeasuredBy.Location = new System.Drawing.Point(533, 80);
+            this.txtMeasuredBy.MinLength = 0;
+            this.txtMeasuredBy.Name = "txtMeasuredBy";
+            this.txtMeasuredBy.OptionalTextBox = null;
+            this.txtMeasuredBy.SearchType = OIS.BaseViews.eSearchType.User;
+            this.txtMeasuredBy.Size = new System.Drawing.Size(250, 23);
+            this.txtMeasuredBy.StringValue = null;
+            this.txtMeasuredBy.TabIndex = 6;
+            this.txtMeasuredBy.TextValue = null;
+            // 
+            // lblMeasuredTo
+            // 
+            this.lblMeasuredTo.AutoSize = true;
+            this.lblMeasuredTo.Location = new System.Drawing.Point(651, 25);
+            this.lblMeasuredTo.Name = "lblMeasuredTo";
+            this.lblMeasuredTo.Size = new System.Drawing.Size(13, 16);
+            this.lblMeasuredTo.TabIndex = 49;
+            this.lblMeasuredTo.Text = "-";
+            this.lblMeasuredTo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // dtMeasuredDateTo
+            // 
+            this.dtMeasuredDateTo.DataBindings.Add(new System.Windows.Forms.Binding("DateValue", this.bdSource, "ANALYTICAL_DATE_TO", true));
+            this.dtMeasuredDateTo.Date = null;
+            this.dtMeasuredDateTo.DateValue = null;
+            this.dtMeasuredDateTo.IsRequired = false;
+            this.dtMeasuredDateTo.Location = new System.Drawing.Point(668, 22);
+            this.dtMeasuredDateTo.MaxLength = 10;
+            this.dtMeasuredDateTo.MinLength = 0;
+            this.dtMeasuredDateTo.Name = "dtMeasuredDateTo";
+            this.dtMeasuredDateTo.ShowTime = false;
+            this.dtMeasuredDateTo.Size = new System.Drawing.Size(115, 23);
+            this.dtMeasuredDateTo.TabIndex = 3;
+            this.dtMeasuredDateTo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtMeasuredDateTo.TextValue = null;
+            // 
+            // lblMeasuredBy
+            // 
+            this.lblMeasuredBy.AutoSize = true;
+            this.lblMeasuredBy.Location = new System.Drawing.Point(440, 83);
+            this.lblMeasuredBy.Name = "lblMeasuredBy";
+            this.lblMeasuredBy.Size = new System.Drawing.Size(87, 16);
+            this.lblMeasuredBy.TabIndex = 46;
+            this.lblMeasuredBy.Text = "Sampling By :";
+            this.lblMeasuredBy.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblMeasuredDate
+            // 
+            this.lblMeasuredDate.AutoSize = true;
+            this.lblMeasuredDate.Location = new System.Drawing.Point(430, 25);
+            this.lblMeasuredDate.Name = "lblMeasuredDate";
+            this.lblMeasuredDate.Size = new System.Drawing.Size(97, 16);
+            this.lblMeasuredDate.TabIndex = 44;
+            this.lblMeasuredDate.Text = "Analytical Date:";
+            this.lblMeasuredDate.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // dtMeasuredDate
+            // 
+            this.dtMeasuredDate.DataBindings.Add(new System.Windows.Forms.Binding("DateValue", this.bdSource, "ANALYTICAL_DATE_FROM", true));
+            this.dtMeasuredDate.Date = null;
+            this.dtMeasuredDate.DateValue = null;
+            this.dtMeasuredDate.IsRequired = false;
+            this.dtMeasuredDate.Location = new System.Drawing.Point(533, 22);
+            this.dtMeasuredDate.MaxLength = 10;
+            this.dtMeasuredDate.MinLength = 0;
+            this.dtMeasuredDate.Name = "dtMeasuredDate";
+            this.dtMeasuredDate.ShowTime = false;
+            this.dtMeasuredDate.Size = new System.Drawing.Size(115, 23);
+            this.dtMeasuredDate.TabIndex = 2;
+            this.dtMeasuredDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dtMeasuredDate.TextValue = null;
+            // 
+            // lblModel
+            // 
+            this.lblModel.AutoSize = true;
+            this.lblModel.Location = new System.Drawing.Point(62, 83);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(72, 16);
+            this.lblModel.TabIndex = 40;
+            this.lblModel.Text = "Customer :";
+            this.lblModel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblReportNumber
+            // 
+            this.lblReportNumber.AutoSize = true;
+            this.lblReportNumber.Location = new System.Drawing.Point(48, 25);
+            this.lblReportNumber.Name = "lblReportNumber";
+            this.lblReportNumber.Size = new System.Drawing.Size(86, 16);
+            this.lblReportNumber.TabIndex = 38;
+            this.lblReportNumber.Text = "Analysis No. :";
+            this.lblReportNumber.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txtReportNumber
+            // 
+            this.txtReportNumber.DataBindings.Add(new System.Windows.Forms.Binding("TextValue", this.bdSource, "ANALYSYS_NO", true));
+            this.txtReportNumber.IsRequired = false;
+            this.txtReportNumber.Location = new System.Drawing.Point(140, 22);
+            this.txtReportNumber.MinLength = 0;
+            this.txtReportNumber.Name = "txtReportNumber";
+            this.txtReportNumber.Size = new System.Drawing.Size(250, 23);
+            this.txtReportNumber.TabIndex = 1;
+            this.txtReportNumber.TextValue = null;
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Tahoma", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.lblHeader.ForeColor = System.Drawing.Color.Navy;
+            this.lblHeader.Location = new System.Drawing.Point(3, 0);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(319, 33);
+            this.lblHeader.TabIndex = 11;
+            this.lblHeader.Text = "Work Place Air Quality";
+            this.lblHeader.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // RPT002_WorkPlaceAirQuality
+            // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ExportGrid = this.gvResult;
+            this.Name = "RPT002_WorkPlaceAirQuality";
+            this.OnNew += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnNew);
+            this.OnSearch += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnSearch);
+            this.OnDDPrint_Preview += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnDDPrint_Preview);
+            this.OnDDPrint_Print += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnDDPrint_Print);
+            this.OnDDPrint_PDF += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnDDPrint_PDF);
+            this.OnDDPrint_Word += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnDDPrint_Word);
+            this.OnDDPrint_Excel += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnDDPrint_Excel);
+            this.OnDDPrint2_Excel += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnDDPrint2_Excel);
+            this.OnClear += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_OnClear);
+            this.Load += new System.EventHandler(this.RPT002_WorkPlaceAirQuality_Load);
+            this.pnlMain.ResumeLayout(false);
+            this.pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdSource)).EndInit();
+            this.gbResult.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gvResult)).EndInit();
+            this.gbCriteria.ResumeLayout(false);
+            this.gbCriteria.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private BaseViews.rGroupBox gbResult;
+        private BaseViews.rDataGridView gvResult;
+        private BaseViews.rGroupBox gbCriteria;
+        private System.Windows.Forms.CheckBox chkShowDeleteRecord;
+        private BaseViews.rSearchTextBox txtCustomer;
+        private BaseViews.rSearchTextBox txtMeasuredBy;
+        private BaseViews.rLabel lblMeasuredTo;
+        private BaseViews.rDateTextBox dtMeasuredDateTo;
+        private BaseViews.rLabel lblMeasuredBy;
+        private BaseViews.rLabel lblMeasuredDate;
+        private BaseViews.rDateTextBox dtMeasuredDate;
+        private BaseViews.rLabel lblModel;
+        private BaseViews.rLabel lblReportNumber;
+        private BaseViews.rTextBox txtReportNumber;
+        private BaseViews.rLabel lblHeader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ANALYSIS_NUMBER;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CUSTOMER_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CUSTOMER_PROJECT_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ANALYTICAL_DATE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SAMPLING_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CRT_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CRT_DATE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CRT_MACHINE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UPD_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UPD_DATE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UPD_MACHINE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DEL_NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DEL_DATE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DEL_MACHINE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CRT_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UPD_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DEL_ID;
+        private BaseViews.rTextBox txtJobNo;
+        private BaseViews.rLabel lblJobNo;
+    }
+}

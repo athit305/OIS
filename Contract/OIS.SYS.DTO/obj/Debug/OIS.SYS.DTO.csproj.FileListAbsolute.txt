@@ -1,0 +1,20 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\OIS.SYS.DTO.dll.config
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\OIS.SYS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\OIS.SYS.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.xml
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\obj\Debug\OIS.SYS.DTO.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\obj\Debug\OIS.SYS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.SYS.DTO\obj\Debug\OIS.SYS.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\OIS.SYS.DTO.dll.config
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\OIS.SYS.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\OIS.SYS.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.xml
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\obj\Debug\OIS.SYS.DTO.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\obj\Debug\OIS.SYS.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.SYS.DTO\obj\Debug\OIS.SYS.DTO.pdb

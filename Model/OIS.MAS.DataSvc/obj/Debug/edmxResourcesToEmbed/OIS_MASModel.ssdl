@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OIS_MASModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBM_CONDITION_REPORT_WPL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CODE" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="NAME" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="SEQ" Type="int" Nullable="false" />
+    <Property Name="CRT_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CRT_MACHINE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEL_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEL_DATE" Type="datetime" />
+    <Property Name="DEL_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBM_DIVISION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SEQ" Type="int" Nullable="false" />
+    <Property Name="CRT_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CRT_MACHINE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEL_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEL_DATE" Type="datetime" />
+    <Property Name="DEL_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBM_GROUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SEQ" Type="int" Nullable="false" />
+    <Property Name="CRT_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CRT_MACHINE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEL_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEL_DATE" Type="datetime" />
+    <Property Name="DEL_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBM_POSITION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SEQ" Type="int" Nullable="false" />
+    <Property Name="CRT_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CRT_MACHINE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEL_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEL_DATE" Type="datetime" />
+    <Property Name="DEL_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBM_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRENAME_ID" Type="int" />
+    <Property Name="FNAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LNAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FNAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LNAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NICKNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDCARD" Type="nvarchar" MaxLength="13" />
+    <Property Name="BIRTHDATE" Type="date" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="DIVISION_ID" Type="int" />
+    <Property Name="SUBDIVISION_ID" Type="int" />
+    <Property Name="POSITION_ID" Type="int" />
+    <Property Name="GROUP_ID" Type="int" />
+    <Property Name="REGISTRATION_NO" Type="nvarchar" MaxLength="100" />
+    <Property Name="LABSUPERVISOR_NO" Type="nvarchar" MaxLength="100" />
+    <Property Name="USER_PIC" Type="image" />
+    <Property Name="PASS" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="CRT_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CRT_MACHINE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEL_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEL_DATE" Type="datetime" />
+    <Property Name="DEL_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_TBM_USER_TBM_DIVISION">
+    <End Role="TBM_DIVISION" Type="Self.TBM_DIVISION" Multiplicity="0..1" />
+    <End Role="TBM_USER" Type="Self.TBM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_DIVISION">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_USER">
+        <PropertyRef Name="DIVISION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBM_USER_TBM_GROUP">
+    <End Role="TBM_GROUP" Type="Self.TBM_GROUP" Multiplicity="0..1" />
+    <End Role="TBM_USER" Type="Self.TBM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_GROUP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_USER">
+        <PropertyRef Name="GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBM_USER_TBM_POSITION">
+    <End Role="TBM_POSITION" Type="Self.TBM_POSITION" Multiplicity="0..1" />
+    <End Role="TBM_USER" Type="Self.TBM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_POSITION">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_USER">
+        <PropertyRef Name="POSITION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_MAS_ComboCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboCustomerProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_CustomerId" Type="int" Mode="In" />
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboGroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboInstitutionSTD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboInstrument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboLabExt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboLanguage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_MAS_ComboPosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboPreName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboProvince" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboReportCode" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_REPORT_TYPE" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboSubDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_DivisionId" Type="int" Mode="In" />
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_ComboUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IncDel" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS_DialogCustomerLocation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_Customer_Id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS101_CancelUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS101_GetUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DIVISION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SUBDIVISION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_POSITION_ID" Type="int" Mode="In" />
+    <Parameter Name="P_GROUP_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS101_SaveUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PRENAME_ID" Type="int" Mode="In" />
+    <Parameter Name="p_FNAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LNAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_FNAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LNAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NICKNAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="P_IDCARD" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_BIRTHDATE" Type="date" Mode="In" />
+    <Parameter Name="p_STARTDATE" Type="date" Mode="In" />
+    <Parameter Name="p_DIVISION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SUBDIVISION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_POSITION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_GROUP_ID" Type="int" Mode="In" />
+    <Parameter Name="p_REGISTRATION_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LABSUPERVISOR_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_USER_PIC" Type="image" Mode="In" />
+    <Parameter Name="p_PASS" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS102_CancelDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS102_GetDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS102_SaveDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS103_CancelSubDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS103_GetSubDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_DIVISION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS103_SaveSubDivision" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_DIVISION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS104_CancelPosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS104_GetPosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS104_SavePosition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS105_CancelPreName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS105_GetPreName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS105_SavePreName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS106_CancelGroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS106_GetGroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS106_GetGroupPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS106_GetGroupUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS106_SaveGroup" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS106_SaveGroupPermission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_GROUP_ID" Type="int" Mode="In" />
+    <Parameter Name="p_MENU_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_IS_ALLOW" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS201_CancelCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS201_GetCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ADDR" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS201_SaveCustomer" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ADDR_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_MOO" Type="int" Mode="In" />
+    <Parameter Name="p_BUILDING_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_BUILDING_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALLEY_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALLEY_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LANE_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LANE_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ROAD_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ROAD_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SUBDISTRICT_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SUBDISTRICT_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DISTRICT_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DISTRICT_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PROVINCE_ID" Type="int" Mode="In" />
+    <Parameter Name="p_POSTCODE" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_COUNTRY" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DEFAULT_LANGUAGE" Type="char" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS202_CancelCustomerProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS202_GetCustomerProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ADDR" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS202_SaveCustomerProject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ADDR_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_MOO" Type="int" Mode="In" />
+    <Parameter Name="p_BUILDING_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_BUILDING_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALLEY_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALLEY_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LANE_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LANE_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ROAD_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ROAD_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SUBDISTRICT_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SUBDISTRICT_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DISTRICT_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DISTRICT_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PROVINCE_ID" Type="int" Mode="In" />
+    <Parameter Name="p_POSTCODE" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DEFAULT_LANGUAGE" Type="char" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS203_CancelProvince" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS203_GetProvince" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS203_SaveProvince" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME_TH" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS301_CancelUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS301_GetUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS301_SaveUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS302_CancelSTDLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS302_GetSTDLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_TYPE_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_BUILDING_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_AREA_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALIAS_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_STANDARD_VALUE" Type="int" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS302_SaveSTDLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_TYPE_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_BUILDING_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALIAS_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ALIAS_NAME_EN" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_STANDARD" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS303_CancelInstrument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS303_GetInstrument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_MODEL" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SERIALNO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOWEXPIRED" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS303_SaveInstrument" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_MODEL" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SERIALNO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_EXPIRE_DATE" Type="date" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS304_CancelMethodAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS304_GetMethodAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_INSTITUTION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS304_SaveMethodAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_INSTITUTION_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS305_CancelParameterAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS305_GetParameterAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_METHOD_ID" Type="int" Mode="In" />
+    <Parameter Name="p_UNIT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_STANDARD" Type="numeric" Mode="In" />
+    <Parameter Name="p_TOOL_PICK_ID" Type="int" Mode="In" />
+    <Parameter Name="p_TOOL_ANALYSYS_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS305_SaveParameterAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ANALYSIS_DETAIL" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_METHOD_REMARK" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_METHOD_ID" Type="int" Mode="In" />
+    <Parameter Name="p_METHOD_REF" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_METHOD_REF_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_UNIT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_STANDARD_THAI" Type="numeric" Mode="In" />
+    <Parameter Name="p_STANDARD_ACGIH" Type="numeric" Mode="In" />
+    <Parameter Name="p_CEILING_LIMIT" Type="bit" Mode="In" />
+    <Parameter Name="p_MRL_VALUE" Type="numeric" Mode="In" />
+    <Parameter Name="p_MRL_VALUE_DIV" Type="numeric" Mode="In" />
+    <Parameter Name="p_LOD_VALUE" Type="numeric" Mode="In" />
+    <Parameter Name="p_LOD_VALUE_DIV" Type="numeric" Mode="In" />
+    <Parameter Name="p_IDL_VALUE" Type="numeric" Mode="In" />
+    <Parameter Name="p_LAB_EXT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_TOOL_PICK_ID" Type="int" Mode="In" />
+    <Parameter Name="p_TOOL_ANALYSYS_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS306_CancelConditionLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS306_GetConditionLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CODE" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS306_SaveConditionLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CODE" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS307_CancelInstitutionSTD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS307_GetInstitutionSTD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS307_SaveInstitutionSTD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHORT_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_EDITION_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PAGE_FROM" Type="int" Mode="In" />
+    <Parameter Name="p_PAGE_TO" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS308_CancelToolPick" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS308_GetToolPick" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS308_SaveToolPick" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS309_CancelToolAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS309_GetToolAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS309_SaveToolAnalysis" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS310_CancelLabExt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ISCANCEL" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS310_GetLabExt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_MAS310_SaveLabExt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_REMARK_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="OIS_MASModelStoreContainer">
+    <EntitySet Name="TBM_CONDITION_REPORT_WPL" EntityType="Self.TBM_CONDITION_REPORT_WPL" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBM_DIVISION" EntityType="Self.TBM_DIVISION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBM_GROUP" EntityType="Self.TBM_GROUP" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBM_POSITION" EntityType="Self.TBM_POSITION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBM_USER" EntityType="Self.TBM_USER" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBM_USER_TBM_DIVISION" Association="Self.FK_TBM_USER_TBM_DIVISION">
+      <End Role="TBM_DIVISION" EntitySet="TBM_DIVISION" />
+      <End Role="TBM_USER" EntitySet="TBM_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBM_USER_TBM_GROUP" Association="Self.FK_TBM_USER_TBM_GROUP">
+      <End Role="TBM_GROUP" EntitySet="TBM_GROUP" />
+      <End Role="TBM_USER" EntitySet="TBM_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBM_USER_TBM_POSITION" Association="Self.FK_TBM_USER_TBM_POSITION">
+      <End Role="TBM_POSITION" EntitySet="TBM_POSITION" />
+      <End Role="TBM_USER" EntitySet="TBM_USER" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

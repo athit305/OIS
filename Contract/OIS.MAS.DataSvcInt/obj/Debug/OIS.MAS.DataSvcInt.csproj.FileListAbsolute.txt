@@ -1,0 +1,22 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DataSvcInt.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DataSvcInt.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Common.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Definition.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Common.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Definition.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\obj\Debug\OIS.MAS.DataSvcInt.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\obj\Debug\OIS.MAS.DataSvcInt.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DataSvcInt\obj\Debug\OIS.MAS.DataSvcInt.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DataSvcInt.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DataSvcInt.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Common.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Definition.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.MAS.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Common.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\bin\Debug\OIS.Definition.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\obj\Debug\OIS.MAS.DataSvcInt.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\obj\Debug\OIS.MAS.DataSvcInt.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DataSvcInt\obj\Debug\OIS.MAS.DataSvcInt.pdb

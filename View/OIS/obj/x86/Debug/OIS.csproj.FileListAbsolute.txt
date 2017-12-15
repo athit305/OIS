@@ -1,0 +1,170 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\Views\Reports\RPT001_Template.xlsx
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\Views\Reports\RPT002_Template.xlsx
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\Views\Reports\RPT002_WorkPlaceAirQualityReport.rpt
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\Views\Reports\RPT001_WorkPlaceLightIntensityReport_2.rpt
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\Views\Reports\RPT001_WorkPlaceLightIntensityReport_1.rpt
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\app.config
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\OIS.exe.config
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\OIS.exe
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\bin\Debug\OIS.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rDataGridView.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rDateTextBox.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rTextBox.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rBaseDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rBaseForm.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rBaseUC.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.LoginForm.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.MainForm.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Properties.Resources.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.SettingForm.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.HelpFillDataDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ParameterAnalysisDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ToolAnalysisDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ToolPickDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.MethodAnalysisDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ProjectDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.CustomerLocationDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ReportViewer.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.UserDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ExportDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.InstrumentDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.CustomerDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.StandardLightDialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS101_User.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS101_UserEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS102_DivisionEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS103_SubDivision.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS102_Division.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS103_SubDivisionEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS104_Position.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS104_PositionEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS105_PreName.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS105_PreNameEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS106_Group.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS106_GroupEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS201_Customer.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS201_CustomerEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS202_CustomerProject.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS202_CustomerProjectEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS203_Province.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS203_ProvinceEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS309_ToolAnalysisEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS308_ToolPickEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS310_LabExtEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS309_ToolAnalysis.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS308_ToolPick.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS310_LabExt.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS301_Unit.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS301_UnitEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS302_StandardLightIntensity.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS302_StandardLightIntensityEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS303_Instrument.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS304_MethodAnalysis.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS304_MethodAnalysisEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS305_ParameterAnalysis.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS305_ParameterAnalysisEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS306_ConditionLight.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS306_ConditionLightEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS303_InstrumentEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS307_InstitutionStandard.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS307_InstitutionStandardEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT001_WorkPlaceLightIntensity.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT001_WorkPlaceLightIntensity_Detail_Dialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT001_WorkPlaceLightIntensity_User_Dialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT001_WorkPlaceLightIntensity_Instrument_Dialog.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT002_WorkPlaceAirQualityEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT001_WorkPlaceLightIntensityEntry.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT002_WorkPlaceAirQuality.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.SYS001_SystemConfig.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.Views.SYS002_UserProfile.resources
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.csproj.GenerateResource.Cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.exe.licenses
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.exe
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\View\OIS\obj\x86\Debug\OIS.pdb
+D:\Ar\SourceCode\OIS\bin\Debug\OIS.exe.config
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.exe
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.pdb
+D:\Ar\SourceCode\OIS\bin\Debug\Views\Reports\RPT001_Template.xlsx
+D:\Ar\SourceCode\OIS\bin\Debug\Views\Reports\RPT002_Template.xlsx
+D:\Ar\SourceCode\OIS\bin\Debug\Views\Reports\RPT002_WorkPlaceAirQualityReport.rpt
+D:\Ar\SourceCode\OIS\bin\Debug\Views\Reports\RPT001_WorkPlaceLightIntensityReport_2.rpt
+D:\Ar\SourceCode\OIS\bin\Debug\Views\Reports\RPT001_WorkPlaceLightIntensityReport_1.rpt
+D:\Ar\SourceCode\OIS\bin\Debug\app.config
+D:\Ar\SourceCode\OIS\bin\Debug\OIS.exe
+D:\Ar\SourceCode\OIS\bin\Debug\OIS.pdb
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rDataGridView.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rDateTextBox.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rTextBox.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rBaseDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rBaseForm.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.BaseViews.rBaseUC.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.LoginForm.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.MainForm.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Properties.Resources.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.SettingForm.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.HelpFillDataDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ParameterAnalysisDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ToolAnalysisDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ToolPickDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.MethodAnalysisDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ProjectDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.CustomerLocationDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ReportViewer.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.UserDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.ExportDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.InstrumentDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.CustomerDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Dialogs.StandardLightDialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS101_User.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS101_UserEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS102_DivisionEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS103_SubDivision.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS102_Division.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS103_SubDivisionEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS104_Position.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS104_PositionEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS105_PreName.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS105_PreNameEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS106_Group.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS106_GroupEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS201_Customer.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS201_CustomerEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS202_CustomerProject.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS202_CustomerProjectEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS203_Province.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS203_ProvinceEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS309_ToolAnalysisEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS308_ToolPickEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS310_LabExtEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS309_ToolAnalysis.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS308_ToolPick.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS310_LabExt.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS301_Unit.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS301_UnitEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS302_StandardLightIntensity.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS302_StandardLightIntensityEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS303_Instrument.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS304_MethodAnalysis.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS304_MethodAnalysisEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS305_ParameterAnalysis.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS305_ParameterAnalysisEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS306_ConditionLight.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS306_ConditionLightEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS303_InstrumentEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS307_InstitutionStandard.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.MAS307_InstitutionStandardEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT001_WorkPlaceLightIntensity.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT001_WorkPlaceLightIntensity_Detail_Dialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT001_WorkPlaceLightIntensity_User_Dialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT001_WorkPlaceLightIntensity_Instrument_Dialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT002_WorkPlaceAirQualityEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT001_WorkPlaceLightIntensityEntry.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.RPT002_WorkPlaceAirQuality.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.SYS001_SystemConfig.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.SYS002_UserProfile.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.csproj.GenerateResource.Cache
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.exe.licenses
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT002_WorkPlaceAirQuality_Detail_Dialog.resources
+D:\Ar\SourceCode\OIS\View\OIS\obj\x86\Debug\OIS.Views.Report.RPT002_WorkPlaceAirQuality_User_Dialog.resources

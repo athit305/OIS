@@ -1,0 +1,28 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.MAS.DTO.dll.config
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.MAS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.MAS.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Common.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Definition.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Common.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.xml
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Definition.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\obj\Debug\OIS.MAS.DTO.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\obj\Debug\OIS.MAS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.MAS.DTO\obj\Debug\OIS.MAS.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.MAS.DTO.dll.config
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.MAS.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.MAS.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Common.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Definition.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Common.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.xml
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\bin\Debug\OIS.Definition.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\obj\Debug\OIS.MAS.DTO.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\obj\Debug\OIS.MAS.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.MAS.DTO\obj\Debug\OIS.MAS.DTO.pdb

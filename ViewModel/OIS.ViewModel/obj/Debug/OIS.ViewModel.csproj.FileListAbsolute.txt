@@ -1,0 +1,54 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.ViewModel.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.ViewModel.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\AutoMapper.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Common.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Definition.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvc.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvcInt.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DataSvc.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DataSvc.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\EntityFramework.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Common.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Definition.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvcInt.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvc.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DataSvc.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DataSvc.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\AutoMapper.xml
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\bin\Debug\EntityFramework.xml
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\obj\Debug\OIS.ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\obj\Debug\OIS.ViewModel.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\ViewModel\OIS.ViewModel\obj\Debug\OIS.ViewModel.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.ViewModel.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.ViewModel.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\AutoMapper.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Common.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Definition.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvc.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvcInt.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DTO.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DataSvc.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DTO.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DataSvc.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DTO.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\EntityFramework.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Common.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.Definition.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvcInt.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DTO.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DTO.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DTO.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.MAS.DataSvc.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.RPT.DataSvc.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\OIS.SYS.DataSvc.pdb
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\AutoMapper.xml
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\bin\Debug\EntityFramework.xml
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\obj\Debug\OIS.ViewModel.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\obj\Debug\OIS.ViewModel.dll
+D:\Ar\SourceCode\OIS\ViewModel\OIS.ViewModel\obj\Debug\OIS.ViewModel.pdb

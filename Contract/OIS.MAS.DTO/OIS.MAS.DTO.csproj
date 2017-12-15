@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02472BB3-5EA5-427B-B661-E3AA46296E83}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OIS.MAS.DTO</RootNamespace>
+    <AssemblyName>OIS.MAS.DTO</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComboBoxData.cs" />
+    <Compile Include="Criteria\MAS303_Instrument_Criteria.cs" />
+    <Compile Include="Criteria\MAS101_User_Criteria.cs" />
+    <Compile Include="Criteria\MAS302_STDLight_Criteria.cs" />
+    <Compile Include="Criteria\MAS304_MethodAnalysis_Criteria.cs" />
+    <Compile Include="Criteria\MAS305_ParameterAnalysis_Criteria.cs" />
+    <Compile Include="Criteria\MAS306_ConditionLight_Criteria.cs" />
+    <Compile Include="Criteria\MAS308_ToolPick_Criteria.cs" />
+    <Compile Include="Criteria\MAS309_ToolAnalysis_Criteria.cs" />
+    <Compile Include="Criteria\MAS310_LabExt_Criteria.cs" />
+    <Compile Include="Criteria\MAS307_InstitutionSTD_Criteria.cs" />
+    <Compile Include="Custom\GroupDTO.cs" />
+    <Compile Include="Custom\HelpDTO.cs" />
+    <Compile Include="OIS_MASModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sp_MAS101_GetUser_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS102_GetDivision_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS103_GetSubDivision_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS104_GetPosition_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS105_GetPreName_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS106_GetGroupPermission_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS106_GetGroupUser_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS106_GetGroup_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS201_GetCustomer_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS202_GetCustomerProject_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS203_GetProvince_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS301_GetUnit_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS302_GetSTDLight_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS303_GetInstrument_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS304_GetMethodAnalysis_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS305_GetParameterAnalysis_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS306_GetConditionLight_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS307_GetInstitutionSTD_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS308_GetToolPick_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS309_GetToolAnalysis_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS310_GetLabExt_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboCustomerProject_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboCustomer_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboDivision_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboGroup_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboInstitutionSTD_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboInstrument_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboLabExt_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboLanguage_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboPosition_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboPreName_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboProvince_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboReportCode_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboSubDivision_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboUnit_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_ComboUser_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_MAS_DialogCustomerLocation_Result.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBM_CONDITION_REPORT_WPL.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBM_DIVISION.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBM_GROUP.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBM_POSITION.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TBM_USER.cs">
+      <DependentUpon>OIS_MASModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OIS_MASModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>OIS_MASModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\OIS.Common\OIS.Common.csproj">
+      <Project>{c2ec7c43-2350-4008-aac8-987c427d0460}</Project>
+      <Name>OIS.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

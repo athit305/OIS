@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OIS_SYSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBM_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FNAME_EN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LNAME_EN" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FNAME_TH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LNAME_TH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="POSITION_ID" Type="Int32" />
+    <Property Name="DIVISION_ID" Type="Int32" />
+    <Property Name="GROUP_ID" Type="Int32" />
+    <Property Name="PASS" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRT_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CRT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEL_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PRENAME_ID" Type="Int32" />
+    <Property Name="NICKNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BIRTHDATE" Type="DateTime" Precision="0" />
+    <Property Name="STARTDATE" Type="DateTime" Precision="0" />
+    <Property Name="SUBDIVISION_ID" Type="Int32" />
+    <Property Name="IDCARD" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="USER_PIC" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="REGISTRATION_NO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LABSUPERVISOR_NO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="OIS_SYSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBM_USER" EntityType="Self.TBM_USER" />
+    <FunctionImport Name="sp_SYS_GetMenu" ReturnType="Collection(OIS_SYSModel.sp_SYS_GetMenu_Result)">
+      <Parameter Name="p_UserId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_SYS_UserLogin" ReturnType="Collection(OIS_SYSModel.sp_SYS_UserLogin_Result)">
+      <Parameter Name="p_UserName" Mode="In" Type="String" />
+      <Parameter Name="p_Password" Mode="In" Type="String" />
+      <Parameter Name="p_AppVersion" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="TBM_MENU" EntityType="OIS_SYSModel.TBM_MENU" />
+    <AssociationSet Name="FK_TBM_MENU_TBM_MENU" Association="OIS_SYSModel.FK_TBM_MENU_TBM_MENU">
+      <End Role="TBM_MENU" EntitySet="TBM_MENU" />
+      <End Role="TBM_MENU1" EntitySet="TBM_MENU" />
+    </AssociationSet>
+    <FunctionImport Name="sp_SYS02_GetUserProfile" ReturnType="Collection(OIS_SYSModel.sp_SYS02_GetUserProfile_Result)">
+      <Parameter Name="p_UserId" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_SYS02_SaveUserProfile">
+      <Parameter Name="p_UserId" Mode="In" Type="String" />
+      <Parameter Name="p_PreNameId" Mode="In" Type="Int32" />
+      <Parameter Name="p_FName_En" Mode="In" Type="String" />
+      <Parameter Name="p_LName_En" Mode="In" Type="String" />
+      <Parameter Name="p_FName_Th" Mode="In" Type="String" />
+      <Parameter Name="p_LName_Th" Mode="In" Type="String" />
+      <Parameter Name="p_NickName" Mode="In" Type="String" />
+      <Parameter Name="p_IdCard" Mode="In" Type="String" />
+      <Parameter Name="p_BirthDate" Mode="In" Type="DateTime" />
+      <Parameter Name="p_StartDate" Mode="In" Type="DateTime" />
+      <Parameter Name="p_DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="p_SubDivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="p_PositionId" Mode="In" Type="Int32" />
+      <Parameter Name="p_GroupId" Mode="In" Type="Int32" />
+      <Parameter Name="p_RegistrationNo" Mode="In" Type="String" />
+      <Parameter Name="p_LabSupervisorNo" Mode="In" Type="String" />
+      <Parameter Name="p_UserPic" Mode="In" Type="Binary" />
+      <Parameter Name="p_Password" Mode="In" Type="String" />
+      <Parameter Name="p_PasswordNew" Mode="In" Type="String" />
+      <Parameter Name="p_PasswordConfirm" Mode="In" Type="String" />
+      <Parameter Name="p_UserLogin" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="TBS_SYSTEM_CONFIG" EntityType="OIS_SYSModel.TBS_SYSTEM_CONFIG" />
+    <FunctionImport Name="sp_SYS001_GetSystemConfig" ReturnType="Collection(OIS_SYSModel.sp_SYS001_GetSystemConfig_Result)" />
+    <FunctionImport Name="sp_SYS001_SaveSystemConfig">
+      <Parameter Name="p_IS_UPDATE_AUTOUPDATE" Mode="In" Type="Boolean" />
+      <Parameter Name="p_DEFAULT_REPORT_REGISTRATION_ID" Mode="In" Type="String" />
+      <Parameter Name="p_DEFAULT_REPORT_LAB_SUPERVISOR_ID" Mode="In" Type="String" />
+      <Parameter Name="p_REPORT_REV_WPL" Mode="In" Type="String" />
+      <Parameter Name="p_DEFAULT_REPORT_WPA_REGISTRATION_ID" Mode="In" Type="String" />
+      <Parameter Name="p_DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" Mode="In" Type="String" />
+      <Parameter Name="p_REPORT_REV_WPA" Mode="In" Type="String" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_SYS_UserLogout">
+      <Parameter Name="p_UserName" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="sp_SYS_GetMenu_Result">
+    <Property Type="String" Name="ID" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="MENU_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MENU_TYPE" Nullable="false" MaxLength="4" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="PARENT_ID" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="PARENT_SEQ" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_SYS_UserLogin_Result">
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="USER_FNAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="USER_LNAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="USER_FULLNAME" Nullable="false" MaxLength="201" />
+    <Property Type="DateTime" Name="BIRTHDATE" Nullable="true" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="true" />
+    <Property Type="String" Name="GROUP_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="DIVISION_ID" Nullable="true" />
+    <Property Type="String" Name="DIVISION_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="SUBDIVISION_ID" Nullable="true" />
+    <Property Type="String" Name="SUBDIVISION_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="POSITION_ID" Nullable="true" />
+    <Property Type="String" Name="POSITION_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LAST_LOGIN" Nullable="false" MaxLength="140" />
+  </ComplexType>
+  <EntityType Name="TBM_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="MENU_NAME" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MENU_TYPE" Type="String" Nullable="false" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="PARENT_ID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Child" Relationship="OIS_SYSModel.FK_TBM_MENU_TBM_MENU" FromRole="TBM_MENU" ToRole="TBM_MENU1" />
+    <NavigationProperty Name="Parent" Relationship="OIS_SYSModel.FK_TBM_MENU_TBM_MENU" FromRole="TBM_MENU1" ToRole="TBM_MENU" />
+    <Property Name="ICON_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_TBM_MENU_TBM_MENU">
+    <End Type="OIS_SYSModel.TBM_MENU" Role="TBM_MENU" Multiplicity="0..1" />
+    <End Type="OIS_SYSModel.TBM_MENU" Role="TBM_MENU1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_MENU">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_MENU1">
+        <PropertyRef Name="PARENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_SYS02_GetUserProfile_Result">
+    <Property Type="String" Name="ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="FNAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LNAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FNAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LNAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="POSITION_ID" Nullable="true" />
+    <Property Type="Int32" Name="DIVISION_ID" Nullable="true" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="true" />
+    <Property Type="String" Name="PASS" Nullable="false" MaxLength="32" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="PASS_NEW" Nullable="true" MaxLength="32" />
+    <Property Type="String" Name="PASS_CONFIRM" Nullable="true" MaxLength="32" />
+    <Property Type="Int32" Name="PRENAME_ID" Nullable="true" />
+    <Property Type="String" Name="NICKNAME" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BIRTHDATE" Nullable="true" />
+    <Property Type="DateTime" Name="STARTDATE" Nullable="true" />
+    <Property Type="Int32" Name="SUBDIVISION_ID" Nullable="true" />
+    <Property Type="String" Name="IDCARD" Nullable="true" MaxLength="13" />
+    <Property Type="Binary" Name="USER_PIC" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="REGISTRATION_NO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LABSUPERVISOR_NO" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="TBS_SYSTEM_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="IS_UPDATE_AUTOUPDATE" Type="Boolean" Nullable="false" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEFAULT_REPORT_LAB_SUPERVISOR_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEFAULT_REPORT_REGISTRATION_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEFAULT_REPORT_WPA_REGISTRATION_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="REPORT_REV_WPL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="REPORT_REV_WPA" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="sp_SYS001_GetSystemConfig_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Boolean" Name="IS_UPDATE_AUTOUPDATE" Nullable="false" />
+    <Property Type="String" Name="DEFAULT_REPORT_LAB_SUPERVISOR_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEFAULT_REPORT_LAB_SUPERVISOR_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="DEFAULT_REPORT_REGISTRATION_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="DEFAULT_REPORT_REGISTRATION_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="DEFAULT_REPORT_WPA_REGISTRATION_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="DEFAULT_REPORT_WPA_REGISTRATION_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="REPORT_REV_WPL" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="REPORT_REV_WPA" Nullable="true" MaxLength="50" />
+  </ComplexType>
+</Schema>

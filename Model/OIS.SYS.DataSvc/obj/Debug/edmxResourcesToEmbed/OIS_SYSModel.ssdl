@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OIS_SYSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBM_MENU">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="MENU_NAME" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MENU_TYPE" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="ICON_NAME" Type="nvarchar" MaxLength="100" />
+    <Property Name="SEQ" Type="int" Nullable="false" />
+    <Property Name="PARENT_ID" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TBM_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="PRENAME_ID" Type="int" />
+    <Property Name="FNAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LNAME_EN" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FNAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="LNAME_TH" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="NICKNAME" Type="nvarchar" MaxLength="50" />
+    <Property Name="IDCARD" Type="nvarchar" MaxLength="13" />
+    <Property Name="BIRTHDATE" Type="date" />
+    <Property Name="STARTDATE" Type="date" />
+    <Property Name="DIVISION_ID" Type="int" />
+    <Property Name="SUBDIVISION_ID" Type="int" />
+    <Property Name="POSITION_ID" Type="int" />
+    <Property Name="GROUP_ID" Type="int" />
+    <Property Name="REGISTRATION_NO" Type="nvarchar" MaxLength="100" />
+    <Property Name="LABSUPERVISOR_NO" Type="nvarchar" MaxLength="100" />
+    <Property Name="USER_PIC" Type="image" />
+    <Property Name="PASS" Type="nvarchar" MaxLength="32" Nullable="false" />
+    <Property Name="CRT_ID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="CRT_DATE" Type="datetime" Nullable="false" />
+    <Property Name="CRT_MACHINE" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+    <Property Name="DEL_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEL_DATE" Type="datetime" />
+    <Property Name="DEL_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TBS_SYSTEM_CONFIG">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="IS_UPDATE_AUTOUPDATE" Type="bit" Nullable="false" />
+    <Property Name="DEFAULT_REPORT_REGISTRATION_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEFAULT_REPORT_LAB_SUPERVISOR_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="REPORT_REV_WPL" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEFAULT_REPORT_WPA_REGISTRATION_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="REPORT_REV_WPA" Type="nvarchar" MaxLength="50" />
+    <Property Name="UPD_ID" Type="nvarchar" MaxLength="20" />
+    <Property Name="UPD_DATE" Type="datetime" />
+    <Property Name="UPD_MACHINE" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_TBM_MENU_TBM_MENU">
+    <End Role="TBM_MENU" Type="Self.TBM_MENU" Multiplicity="0..1" />
+    <End Role="TBM_MENU1" Type="Self.TBM_MENU" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_MENU">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_MENU1">
+        <PropertyRef Name="PARENT_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="sp_SYS_GetMenu" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_UserId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_SYS_UserLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_AppVersion" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_SYS_UserLogout" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_UserName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_SYS001_GetSystemConfig" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_SYS001_SaveSystemConfig" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_IS_UPDATE_AUTOUPDATE" Type="bit" Mode="In" />
+    <Parameter Name="p_DEFAULT_REPORT_REGISTRATION_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DEFAULT_REPORT_LAB_SUPERVISOR_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_REPORT_REV_WPL" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DEFAULT_REPORT_WPA_REGISTRATION_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_DEFAULT_REPORT_WPA_LAB_SUPERVISOR_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_REPORT_REV_WPA" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_SYS02_GetUserProfile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_UserId" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_SYS02_SaveUserProfile" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_UserId" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PreNameId" Type="int" Mode="In" />
+    <Parameter Name="p_FName_En" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LName_En" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_FName_Th" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LName_Th" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_NickName" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_IdCard" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_BirthDate" Type="date" Mode="In" />
+    <Parameter Name="p_StartDate" Type="date" Mode="In" />
+    <Parameter Name="p_DivisionId" Type="int" Mode="In" />
+    <Parameter Name="p_SubDivisionId" Type="int" Mode="In" />
+    <Parameter Name="p_PositionId" Type="int" Mode="In" />
+    <Parameter Name="p_GroupId" Type="int" Mode="In" />
+    <Parameter Name="p_RegistrationNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LabSupervisorNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_UserPic" Type="image" Mode="In" />
+    <Parameter Name="p_Password" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PasswordNew" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_PasswordConfirm" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_UserLogin" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="OIS_SYSModelStoreContainer">
+    <EntitySet Name="TBM_MENU" EntityType="Self.TBM_MENU" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBM_USER" EntityType="Self.TBM_USER" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TBS_SYSTEM_CONFIG" EntityType="Self.TBS_SYSTEM_CONFIG" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TBM_MENU_TBM_MENU" Association="Self.FK_TBM_MENU_TBM_MENU">
+      <End Role="TBM_MENU" EntitySet="TBM_MENU" />
+      <End Role="TBM_MENU1" EntitySet="TBM_MENU" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

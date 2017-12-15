@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fcc3d142da214dd3afeb61fd2da7d4d3" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="OIS_SYSModel.TBM_USER" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OIS_SYSModel.TBM_MENU" Width="1.5" PointX="3.375" PointY="0.75" />
+        <AssociationConnector Association="OIS_SYSModel.FK_TBM_MENU_TBM_MENU" />
+        <EntityTypeShape EntityType="OIS_SYSModel.TBS_SYSTEM_CONFIG" Width="1.5" PointX="3.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

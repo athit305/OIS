@@ -1,0 +1,10 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.RPT.DTO\bin\Debug\OIS.RPT.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.RPT.DTO\bin\Debug\OIS.RPT.DTO.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.RPT.DTO\obj\Debug\OIS.RPT.DTO.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.RPT.DTO\obj\Debug\OIS.RPT.DTO.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Contract\OIS.RPT.DTO\obj\Debug\OIS.RPT.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.RPT.DTO\bin\Debug\OIS.RPT.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.RPT.DTO\bin\Debug\OIS.RPT.DTO.pdb
+D:\Ar\SourceCode\OIS\Contract\OIS.RPT.DTO\obj\Debug\OIS.RPT.DTO.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\Contract\OIS.RPT.DTO\obj\Debug\OIS.RPT.DTO.dll
+D:\Ar\SourceCode\OIS\Contract\OIS.RPT.DTO\obj\Debug\OIS.RPT.DTO.pdb

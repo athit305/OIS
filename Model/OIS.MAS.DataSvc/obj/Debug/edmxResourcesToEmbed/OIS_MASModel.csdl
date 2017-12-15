@@ -1,0 +1,1390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OIS_MASModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="OIS_MASEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBM_DIVISION" EntityType="OIS_MASModel.TBM_DIVISION" />
+    <EntitySet Name="TBM_GROUP" EntityType="OIS_MASModel.TBM_GROUP" />
+    <EntitySet Name="TBM_POSITION" EntityType="OIS_MASModel.TBM_POSITION" />
+    <FunctionImport Name="sp_MAS_ComboGroup" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboGroup_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboDivision" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboDivision_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboPosition" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboPosition_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboSubDivision" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboSubDivision_Result)">
+      <Parameter Name="p_DivisionId" Mode="In" Type="Int32" />
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboPreName" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboPreName_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS102_GetDivision" ReturnType="Collection(OIS_MASModel.sp_MAS102_GetDivision_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS102_SaveDivision" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS103_GetSubDivision" ReturnType="Collection(OIS_MASModel.sp_MAS103_GetSubDivision_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_DIVISION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS104_GetPosition" ReturnType="Collection(OIS_MASModel.sp_MAS104_GetPosition_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS101_GetUser" ReturnType="Collection(OIS_MASModel.sp_MAS101_GetUser_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="String" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_DIVISION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SUBDIVISION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_POSITION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="P_GROUP_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <EntitySet Name="TBM_USER" EntityType="OIS_MASModel.TBM_USER" />
+    <AssociationSet Name="FK_TBM_USER_TBM_DIVISION" Association="OIS_MASModel.FK_TBM_USER_TBM_DIVISION">
+      <End Role="TBM_DIVISION" EntitySet="TBM_DIVISION" />
+      <End Role="TBM_USER" EntitySet="TBM_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBM_USER_TBM_GROUP" Association="OIS_MASModel.FK_TBM_USER_TBM_GROUP">
+      <End Role="TBM_GROUP" EntitySet="TBM_GROUP" />
+      <End Role="TBM_USER" EntitySet="TBM_USER" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TBM_USER_TBM_POSITION" Association="OIS_MASModel.FK_TBM_USER_TBM_POSITION">
+      <End Role="TBM_POSITION" EntitySet="TBM_POSITION" />
+      <End Role="TBM_USER" EntitySet="TBM_USER" />
+    </AssociationSet>
+    <FunctionImport Name="sp_MAS101_SaveUser" ReturnType="Collection(String)">
+      <Parameter Name="p_ID" Mode="In" Type="String" />
+      <Parameter Name="p_PRENAME_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_FNAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_LNAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_FNAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_LNAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_NICKNAME" Mode="In" Type="String" />
+      <Parameter Name="P_IDCARD" Mode="In" Type="String" />
+      <Parameter Name="p_BIRTHDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_STARTDATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_DIVISION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SUBDIVISION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_POSITION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_GROUP_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_REGISTRATION_NO" Mode="In" Type="String" />
+      <Parameter Name="p_LABSUPERVISOR_NO" Mode="In" Type="String" />
+      <Parameter Name="p_USER_PIC" Mode="In" Type="Binary" />
+      <Parameter Name="p_PASS" Mode="In" Type="String" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS101_CancelUser">
+      <Parameter Name="p_ID" Mode="In" Type="String" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS301_GetUnit" ReturnType="Collection(OIS_MASModel.sp_MAS301_GetUnit_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS301_SaveUnit" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS301_CancelUnit">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS303_CancelInstrument">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS303_GetInstrument" ReturnType="Collection(OIS_MASModel.sp_MAS303_GetInstrument_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_MODEL" Mode="In" Type="String" />
+      <Parameter Name="p_SERIALNO" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOWEXPIRED" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS303_SaveInstrument" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_MODEL" Mode="In" Type="String" />
+      <Parameter Name="p_SERIALNO" Mode="In" Type="String" />
+      <Parameter Name="p_EXPIRE_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS203_CancelProvince">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS203_GetProvince" ReturnType="Collection(OIS_MASModel.sp_MAS203_GetProvince_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS203_SaveProvince" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS102_CancelDivision">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS103_CancelSubDivision">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS103_SaveSubDivision" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_DIVISION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS104_CancelPosition">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS104_SavePosition" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS105_CancelPreName">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS105_GetPreName" ReturnType="Collection(OIS_MASModel.sp_MAS105_GetPreName_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS105_SavePreName" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS106_CancelGroup">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS106_GetGroup" ReturnType="Collection(OIS_MASModel.sp_MAS106_GetGroup_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS106_SaveGroup" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS106_GetGroupPermission" ReturnType="Collection(OIS_MASModel.sp_MAS106_GetGroupPermission_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS106_GetGroupUser" ReturnType="Collection(OIS_MASModel.sp_MAS106_GetGroupUser_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS106_SaveGroupPermission">
+      <Parameter Name="p_GROUP_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_MENU_ID" Mode="In" Type="String" />
+      <Parameter Name="p_IS_ALLOW" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS201_GetCustomer" ReturnType="Collection(OIS_MASModel.sp_MAS201_GetCustomer_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_ADDR" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS201_CancelCustomer">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS201_SaveCustomer" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_ADDR_NO" Mode="In" Type="String" />
+      <Parameter Name="p_MOO" Mode="In" Type="Int32" />
+      <Parameter Name="p_BUILDING_EN" Mode="In" Type="String" />
+      <Parameter Name="p_BUILDING_TH" Mode="In" Type="String" />
+      <Parameter Name="p_ALLEY_EN" Mode="In" Type="String" />
+      <Parameter Name="p_ALLEY_TH" Mode="In" Type="String" />
+      <Parameter Name="p_LANE_EN" Mode="In" Type="String" />
+      <Parameter Name="p_LANE_TH" Mode="In" Type="String" />
+      <Parameter Name="p_ROAD_EN" Mode="In" Type="String" />
+      <Parameter Name="p_ROAD_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SUBDISTRICT_EN" Mode="In" Type="String" />
+      <Parameter Name="p_SUBDISTRICT_TH" Mode="In" Type="String" />
+      <Parameter Name="p_DISTRICT_EN" Mode="In" Type="String" />
+      <Parameter Name="p_DISTRICT_TH" Mode="In" Type="String" />
+      <Parameter Name="p_PROVINCE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_POSTCODE" Mode="In" Type="String" />
+      <Parameter Name="p_COUNTRY" Mode="In" Type="String" />
+      <Parameter Name="p_DEFAULT_LANGUAGE" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS202_CancelCustomerProject">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS202_GetCustomerProject" ReturnType="Collection(OIS_MASModel.sp_MAS202_GetCustomerProject_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_ADDR" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS202_SaveCustomerProject" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_NAME_TH" Mode="In" Type="String" />
+      <Parameter Name="p_ADDR_NO" Mode="In" Type="String" />
+      <Parameter Name="p_MOO" Mode="In" Type="Int32" />
+      <Parameter Name="p_BUILDING_EN" Mode="In" Type="String" />
+      <Parameter Name="p_BUILDING_TH" Mode="In" Type="String" />
+      <Parameter Name="p_ALLEY_EN" Mode="In" Type="String" />
+      <Parameter Name="p_ALLEY_TH" Mode="In" Type="String" />
+      <Parameter Name="p_LANE_EN" Mode="In" Type="String" />
+      <Parameter Name="p_LANE_TH" Mode="In" Type="String" />
+      <Parameter Name="p_ROAD_EN" Mode="In" Type="String" />
+      <Parameter Name="p_ROAD_TH" Mode="In" Type="String" />
+      <Parameter Name="p_SUBDISTRICT_EN" Mode="In" Type="String" />
+      <Parameter Name="p_SUBDISTRICT_TH" Mode="In" Type="String" />
+      <Parameter Name="p_DISTRICT_EN" Mode="In" Type="String" />
+      <Parameter Name="p_DISTRICT_TH" Mode="In" Type="String" />
+      <Parameter Name="p_PROVINCE_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_POSTCODE" Mode="In" Type="String" />
+      <Parameter Name="p_DEFAULT_LANGUAGE" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboCustomer" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboCustomer_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS302_CancelSTDLight">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS302_GetSTDLight" ReturnType="Collection(OIS_MASModel.sp_MAS302_GetSTDLight_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_TYPE_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_BUILDING_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_AREA_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_ALIAS_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_STANDARD_VALUE" Mode="In" Type="Int32" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS302_SaveSTDLight" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_TYPE_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_BUILDING_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_ALIAS_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_ALIAS_NAME_EN" Mode="In" Type="String" />
+      <Parameter Name="p_STANDARD" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboProvince" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboProvince_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboReportCode" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboReportCode_Result)">
+      <Parameter Name="p_REPORT_TYPE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboCustomerProject" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboCustomerProject_Result)">
+      <Parameter Name="p_CustomerId" Mode="In" Type="Int32" />
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboInstrument" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboInstrument_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboUser" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboUser_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_DialogCustomerLocation" ReturnType="Collection(OIS_MASModel.sp_MAS_DialogCustomerLocation_Result)">
+      <Parameter Name="p_Customer_Id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS306_CancelConditionLight">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS306_GetConditionLight" ReturnType="Collection(OIS_MASModel.sp_MAS306_GetConditionLight_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CODE" Mode="In" Type="String" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS306_SaveConditionLight" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CODE" Mode="In" Type="String" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS304_CancelMethodAnalysis">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS304_GetMethodAnalysis" ReturnType="Collection(OIS_MASModel.sp_MAS304_GetMethodAnalysis_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_INSTITUTION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS304_SaveMethodAnalysis" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_INSTITUTION_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS305_CancelParameterAnalysis">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS305_GetParameterAnalysis" ReturnType="Collection(OIS_MASModel.sp_MAS305_GetParameterAnalysis_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_METHOD_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_UNIT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_STANDARD" Mode="In" Type="Decimal" />
+      <Parameter Name="p_TOOL_PICK_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_TOOL_ANALYSYS_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS305_SaveParameterAnalysis" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_ANALYSIS_DETAIL" Mode="In" Type="String" />
+      <Parameter Name="p_METHOD_REMARK" Mode="In" Type="String" />
+      <Parameter Name="p_METHOD_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_METHOD_REF" Mode="In" Type="String" />
+      <Parameter Name="p_METHOD_REF_NO" Mode="In" Type="String" />
+      <Parameter Name="p_UNIT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_STANDARD_THAI" Mode="In" Type="Decimal" />
+      <Parameter Name="p_STANDARD_ACGIH" Mode="In" Type="Decimal" />
+      <Parameter Name="p_CEILING_LIMIT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_MRL_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="p_MRL_VALUE_DIV" Mode="In" Type="Decimal" />
+      <Parameter Name="p_LOD_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="p_LOD_VALUE_DIV" Mode="In" Type="Decimal" />
+      <Parameter Name="p_IDL_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="p_LAB_EXT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_TOOL_PICK_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_TOOL_ANALYSYS_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS307_CancelInstitutionSTD">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS307_GetInstitutionSTD" ReturnType="Collection(OIS_MASModel.sp_MAS307_GetInstitutionSTD_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS307_SaveInstitutionSTD" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHORT_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_EDITION_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_PAGE_FROM" Mode="In" Type="Int32" />
+      <Parameter Name="p_PAGE_TO" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboInstitutionSTD" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboInstitutionSTD_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboUnit" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboUnit_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboLabExt" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboLabExt_Result)">
+      <Parameter Name="p_IncDel" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS310_CancelLabExt">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS310_GetLabExt" ReturnType="Collection(OIS_MASModel.sp_MAS310_GetLabExt_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS310_SaveLabExt" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_REMARK_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS308_CancelToolPick">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS308_GetToolPick" ReturnType="Collection(OIS_MASModel.sp_MAS308_GetToolPick_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS308_SaveToolPick" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS309_CancelToolAnalysis">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ISCANCEL" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS309_GetToolAnalysis" ReturnType="Collection(OIS_MASModel.sp_MAS309_GetToolAnalysis_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS309_SaveToolAnalysis" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_MAS_ComboLanguage" ReturnType="Collection(OIS_MASModel.sp_MAS_ComboLanguage_Result)" />
+    <EntitySet Name="TBM_CONDITION_REPORT_WPL" EntityType="OIS_MASModel.TBM_CONDITION_REPORT_WPL" />
+  </EntityContainer>
+  <EntityType Name="TBM_DIVISION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME_EN" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NAME_TH" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="CRT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CRT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_MACHINE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEL_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBM_USER" Relationship="OIS_MASModel.FK_TBM_USER_TBM_DIVISION" FromRole="TBM_DIVISION" ToRole="TBM_USER" />
+  </EntityType>
+  <EntityType Name="TBM_GROUP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME_EN" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NAME_TH" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="CRT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CRT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_MACHINE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEL_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBM_USER" Relationship="OIS_MASModel.FK_TBM_USER_TBM_GROUP" FromRole="TBM_GROUP" ToRole="TBM_USER" />
+  </EntityType>
+  <EntityType Name="TBM_POSITION">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NAME_EN" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NAME_TH" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="CRT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CRT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_MACHINE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEL_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBM_USER" Relationship="OIS_MASModel.FK_TBM_USER_TBM_POSITION" FromRole="TBM_POSITION" ToRole="TBM_USER" />
+  </EntityType>
+  <ComplexType Name="sp_MAS_ComboGroup_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboDivision_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboPosition_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboSubDivision_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="Int32" Name="DIVISION_ID" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboPreName_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS102_GetDivision_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_FULLNAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_FULLNAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_FULLNAME" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS103_GetSubDivision_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="Int32" Name="DIVISION_ID" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_FULLNAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_FULLNAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_FULLNAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DIVISION_NAME" Nullable="false" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS104_GetPosition_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_FULLNAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_FULLNAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_FULLNAME" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS101_GetUser_Result">
+    <Property Type="String" Name="ID" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="PRENAME_ID" Nullable="true" />
+    <Property Type="String" Name="FNAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LNAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FNAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LNAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NICKNAME" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="BIRTHDATE" Nullable="true" />
+    <Property Type="DateTime" Name="STARTDATE" Nullable="true" />
+    <Property Type="Int32" Name="DIVISION_ID" Nullable="true" />
+    <Property Type="Int32" Name="SUBDIVISION_ID" Nullable="true" />
+    <Property Type="Int32" Name="POSITION_ID" Nullable="true" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="true" />
+    <Property Type="String" Name="PASS" Nullable="false" MaxLength="32" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="FULLNAME_EN" Nullable="false" MaxLength="302" />
+    <Property Type="String" Name="FULLNAME_TH" Nullable="false" MaxLength="302" />
+    <Property Type="String" Name="DIVISION_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="SUBDIVISION_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="POSITION_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="GROUP_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="IDCARD" Nullable="true" MaxLength="13" />
+    <Property Type="Binary" Name="USER_PIC" Nullable="true" MaxLength="Max" />
+    <Property Type="String" Name="REGISTRATION_NO" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LABSUPERVISOR_NO" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="TBM_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="PRENAME_ID" Type="Int32" />
+    <Property Name="FNAME_EN" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LNAME_EN" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FNAME_TH" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LNAME_TH" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="NICKNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BIRTHDATE" Type="DateTime" Precision="0" />
+    <Property Name="STARTDATE" Type="DateTime" Precision="0" />
+    <Property Name="DIVISION_ID" Type="Int32" />
+    <Property Name="SUBDIVISION_ID" Type="Int32" />
+    <Property Name="POSITION_ID" Type="Int32" />
+    <Property Name="GROUP_ID" Type="Int32" />
+    <Property Name="PASS" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+    <Property Name="CRT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CRT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_MACHINE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEL_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="TBM_DIVISION" Relationship="OIS_MASModel.FK_TBM_USER_TBM_DIVISION" FromRole="TBM_USER" ToRole="TBM_DIVISION" />
+    <NavigationProperty Name="TBM_GROUP" Relationship="OIS_MASModel.FK_TBM_USER_TBM_GROUP" FromRole="TBM_USER" ToRole="TBM_GROUP" />
+    <NavigationProperty Name="TBM_POSITION" Relationship="OIS_MASModel.FK_TBM_USER_TBM_POSITION" FromRole="TBM_USER" ToRole="TBM_POSITION" />
+    <Property Name="IDCARD" Type="String" MaxLength="13" FixedLength="false" Unicode="true" />
+    <Property Name="USER_PIC" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="REGISTRATION_NO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LABSUPERVISOR_NO" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_TBM_USER_TBM_DIVISION">
+    <End Type="OIS_MASModel.TBM_DIVISION" Role="TBM_DIVISION" Multiplicity="0..1" />
+    <End Type="OIS_MASModel.TBM_USER" Role="TBM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_DIVISION">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_USER">
+        <PropertyRef Name="DIVISION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBM_USER_TBM_GROUP">
+    <End Type="OIS_MASModel.TBM_GROUP" Role="TBM_GROUP" Multiplicity="0..1" />
+    <End Type="OIS_MASModel.TBM_USER" Role="TBM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_GROUP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_USER">
+        <PropertyRef Name="GROUP_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TBM_USER_TBM_POSITION">
+    <End Type="OIS_MASModel.TBM_POSITION" Role="TBM_POSITION" Multiplicity="0..1" />
+    <End Type="OIS_MASModel.TBM_USER" Role="TBM_USER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TBM_POSITION">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TBM_USER">
+        <PropertyRef Name="POSITION_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <ComplexType Name="sp_MAS301_GetUnit_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS303_GetInstrument_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MODEL" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SERIALNO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="FULLNAME" Nullable="false" MaxLength="322" />
+    <Property Type="DateTime" Name="EXPIRE_DATE" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS203_GetProvince_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS105_GetPreName_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS106_GetGroup_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS106_GetGroupPermission_Result">
+    <Property Type="String" Name="MENU_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PARENT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Boolean" Name="IS_ALLOW" Nullable="true" />
+    <Property Type="String" Name="MENU_ID" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS106_GetGroupUser_Result">
+    <Property Type="String" Name="USER_ID" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="FULLNAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="POSITION_NAME" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS201_GetCustomer_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ADDR_NO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="MOO" Nullable="true" />
+    <Property Type="String" Name="BUILDING_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BUILDING_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ALLEY_EN" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ALLEY_TH" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LANE_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LANE_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PROVINCE_ID" Nullable="true" />
+    <Property Type="String" Name="POSTCODE" Nullable="true" MaxLength="5" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ADDR_EN" Nullable="true" MaxLength="1067" />
+    <Property Type="String" Name="ADDR_TH" Nullable="true" MaxLength="979" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEFAULT_LANGUAGE" Nullable="false" MaxLength="2" />
+    <Property Type="Boolean" Name="IS_LANG_TH" Nullable="true" />
+    <Property Type="Boolean" Name="IS_LANG_EN" Nullable="true" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ADDR" Nullable="true" MaxLength="1067" />
+    <Property Type="String" Name="COUNTRY" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS202_GetCustomerProject_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ADDR_NO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="MOO" Nullable="true" />
+    <Property Type="String" Name="BUILDING_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BUILDING_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ALLEY_EN" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ALLEY_TH" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LANE_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LANE_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PROVINCE_ID" Nullable="true" />
+    <Property Type="String" Name="POSTCODE" Nullable="true" MaxLength="5" />
+    <Property Type="Int32" Name="CUSTOMER_ID" Nullable="false" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ADDR_EN" Nullable="false" MaxLength="965" />
+    <Property Type="String" Name="ADDR_TH" Nullable="false" MaxLength="978" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="CUSTOMER_NAME" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ADDR" Nullable="false" MaxLength="978" />
+    <Property Type="String" Name="DEFAULT_LANGUAGE" Nullable="false" MaxLength="2" />
+    <Property Type="Boolean" Name="IS_LANG_TH" Nullable="true" />
+    <Property Type="Boolean" Name="IS_LANG_EN" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboCustomer_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="500" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ADDR_NO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="MOO" Nullable="true" />
+    <Property Type="String" Name="BUILDING_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BUILDING_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ALLEY_EN" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ALLEY_TH" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LANE_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LANE_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PROVINCE_ID" Nullable="true" />
+    <Property Type="String" Name="POSTCODE" Nullable="true" MaxLength="5" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="COUNTRY" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEFAULT_LANGUAGE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS302_GetSTDLight_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="TYPE_NAME" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="BUILDING_NAME" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="STANDARD" Nullable="false" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="ALIAS_NAME" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ALIAS_NAME_EN" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboProvince_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboReportCode_Result">
+    <Property Type="String" Name="REPORT_GROUP" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="REPORT_CODE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="VALUE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="REPORT_TYPE" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboCustomerProject_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="500" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME_EN" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="NAME_TH" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="ADDR_NO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="MOO" Nullable="true" />
+    <Property Type="String" Name="BUILDING_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="BUILDING_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ALLEY_EN" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ALLEY_TH" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LANE_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LANE_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ROAD_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SUBDISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_EN" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DISTRICT_TH" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PROVINCE_ID" Nullable="true" />
+    <Property Type="String" Name="POSTCODE" Nullable="true" MaxLength="5" />
+    <Property Type="Int32" Name="CUSTOMER_ID" Nullable="false" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEFAULT_LANGUAGE" Nullable="false" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboInstrument_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="304" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MODEL" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SERIALNO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboUser_Result">
+    <Property Type="String" Name="VALUE" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="ID" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="PRENAME_ID" Nullable="true" />
+    <Property Type="String" Name="FNAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LNAME_EN" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="FNAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="LNAME_TH" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="NICKNAME" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="IDCARD" Nullable="true" MaxLength="13" />
+    <Property Type="DateTime" Name="BIRTHDATE" Nullable="true" />
+    <Property Type="DateTime" Name="STARTDATE" Nullable="true" />
+    <Property Type="Int32" Name="DIVISION_ID" Nullable="true" />
+    <Property Type="Int32" Name="SUBDIVISION_ID" Nullable="true" />
+    <Property Type="Int32" Name="POSITION_ID" Nullable="true" />
+    <Property Type="Int32" Name="GROUP_ID" Nullable="true" />
+    <Property Type="String" Name="PASS" Nullable="false" MaxLength="32" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_DialogCustomerLocation_Result">
+    <Property Type="Int32" Name="CUSTOMER_ID" Nullable="false" />
+    <Property Type="String" Name="LOC_NAME_LV3" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LOC_NAME_LV2" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LOC_NAME" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="TOTAL" Nullable="true" />
+    <Property Type="String" Name="CUSTOMER_NAME" Nullable="false" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS306_GetConditionLight_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="CODE" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS304_GetMethodAnalysis_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="INSTITUTION_ID" Nullable="true" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="INSTITUTION_STD_NAME" Nullable="true" MaxLength="200" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS305_GetParameterAnalysis_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="METHOD_ID" Nullable="true" />
+    <Property Type="Int32" Name="UNIT_ID" Nullable="true" />
+    <Property Type="Decimal" Name="STANDARD_THAI" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="Decimal" Name="STANDARD_ACGIH" Nullable="true" Precision="10" Scale="2" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="METHOD_NAME" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="UNIT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="TOOL_PICK_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="TOOL_ANALYSIS_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="CEILING_LIMIT" Nullable="false" />
+    <Property Type="Int32" Name="TOOL_PICK_ID" Nullable="true" />
+    <Property Type="Int32" Name="TOOL_ANALYSIS_ID" Nullable="true" />
+    <Property Type="String" Name="ANALYSIS_DETAIL" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="LAB_EXT_ID" Nullable="true" />
+    <Property Type="String" Name="METHOD_REMARK" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="METHOD_REF" Nullable="true" MaxLength="50" />
+    <Property Type="Decimal" Name="MRL_VALUE" Nullable="true" Precision="10" Scale="3" />
+    <Property Type="String" Name="METHOD_REF_NO" Nullable="true" MaxLength="20" />
+    <Property Type="Decimal" Name="MRL_VALUE_DIV" Nullable="true" Precision="10" Scale="3" />
+    <Property Type="Decimal" Name="LOD_VALUE" Nullable="true" Precision="10" Scale="3" />
+    <Property Type="Decimal" Name="LOD_VALUE_DIV" Nullable="true" Precision="10" Scale="3" />
+    <Property Type="Decimal" Name="IDL_VALUE" Nullable="true" Precision="10" Scale="3" />
+    <Property Type="String" Name="LAB_REMARK" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS307_GetInstitutionSTD_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="SHORT_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EDITION_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PAGE_FROM" Nullable="true" />
+    <Property Type="Int32" Name="PAGE_TO" Nullable="true" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboInstitutionSTD_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="253" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="SHORT_NAME" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EDITION_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PAGE_FROM" Nullable="true" />
+    <Property Type="Int32" Name="PAGE_TO" Nullable="true" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboUnit_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboLabExt_Result">
+    <Property Type="Int32" Name="VALUE" Nullable="false" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="REMARK_NAME" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS310_GetLabExt_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="REMARK_NAME" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS308_GetToolPick_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS309_GetToolAnalysis_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+  </ComplexType>
+  <ComplexType Name="sp_MAS_ComboLanguage_Result">
+    <Property Type="String" Name="VALUE" Nullable="false" MaxLength="2" />
+    <Property Type="String" Name="DISPLAY" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <EntityType Name="TBM_CONDITION_REPORT_WPL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CODE" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="NAME" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="SEQ" Type="Int32" Nullable="false" />
+    <Property Name="CRT_ID" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CRT_DATE" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CRT_MACHINE" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UPD_DATE" Type="DateTime" Precision="3" />
+    <Property Name="UPD_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_ID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="DEL_DATE" Type="DateTime" Precision="3" />
+    <Property Name="DEL_MACHINE" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

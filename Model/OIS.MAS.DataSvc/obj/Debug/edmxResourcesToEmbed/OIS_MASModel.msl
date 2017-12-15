@@ -1,0 +1,1045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OIS_MASModelStoreContainer" CdmEntityContainer="OIS_MASEntities">
+    <EntitySetMapping Name="TBM_DIVISION">
+      <EntityTypeMapping TypeName="OIS_MASModel.TBM_DIVISION">
+        <MappingFragment StoreEntitySet="TBM_DIVISION">
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBM_GROUP">
+      <EntityTypeMapping TypeName="OIS_MASModel.TBM_GROUP">
+        <MappingFragment StoreEntitySet="TBM_GROUP">
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TBM_POSITION">
+      <EntityTypeMapping TypeName="OIS_MASModel.TBM_POSITION">
+        <MappingFragment StoreEntitySet="TBM_POSITION">
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboGroup" FunctionName="OIS_MASModel.Store.sp_MAS_ComboGroup">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboGroup_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboDivision" FunctionName="OIS_MASModel.Store.sp_MAS_ComboDivision">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboDivision_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboPosition" FunctionName="OIS_MASModel.Store.sp_MAS_ComboPosition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboPosition_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboSubDivision" FunctionName="OIS_MASModel.Store.sp_MAS_ComboSubDivision">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboSubDivision_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboPreName" FunctionName="OIS_MASModel.Store.sp_MAS_ComboPreName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboPreName_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS102_GetDivision" FunctionName="OIS_MASModel.Store.sp_MAS102_GetDivision">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS102_GetDivision_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_FULLNAME" ColumnName="CRT_FULLNAME" />
+          <ScalarProperty Name="UPD_FULLNAME" ColumnName="UPD_FULLNAME" />
+          <ScalarProperty Name="DEL_FULLNAME" ColumnName="DEL_FULLNAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS102_SaveDivision" FunctionName="OIS_MASModel.Store.sp_MAS102_SaveDivision" />
+    <FunctionImportMapping FunctionImportName="sp_MAS103_GetSubDivision" FunctionName="OIS_MASModel.Store.sp_MAS103_GetSubDivision">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS103_GetSubDivision_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_FULLNAME" ColumnName="CRT_FULLNAME" />
+          <ScalarProperty Name="UPD_FULLNAME" ColumnName="UPD_FULLNAME" />
+          <ScalarProperty Name="DEL_FULLNAME" ColumnName="DEL_FULLNAME" />
+          <ScalarProperty Name="DIVISION_NAME" ColumnName="DIVISION_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS104_GetPosition" FunctionName="OIS_MASModel.Store.sp_MAS104_GetPosition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS104_GetPosition_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_FULLNAME" ColumnName="CRT_FULLNAME" />
+          <ScalarProperty Name="UPD_FULLNAME" ColumnName="UPD_FULLNAME" />
+          <ScalarProperty Name="DEL_FULLNAME" ColumnName="DEL_FULLNAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS101_GetUser" FunctionName="OIS_MASModel.Store.sp_MAS101_GetUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS101_GetUser_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRENAME_ID" ColumnName="PRENAME_ID" />
+          <ScalarProperty Name="FNAME_EN" ColumnName="FNAME_EN" />
+          <ScalarProperty Name="LNAME_EN" ColumnName="LNAME_EN" />
+          <ScalarProperty Name="FNAME_TH" ColumnName="FNAME_TH" />
+          <ScalarProperty Name="LNAME_TH" ColumnName="LNAME_TH" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="SUBDIVISION_ID" ColumnName="SUBDIVISION_ID" />
+          <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="FULLNAME_EN" ColumnName="FULLNAME_EN" />
+          <ScalarProperty Name="FULLNAME_TH" ColumnName="FULLNAME_TH" />
+          <ScalarProperty Name="DIVISION_NAME" ColumnName="DIVISION_NAME" />
+          <ScalarProperty Name="SUBDIVISION_NAME" ColumnName="SUBDIVISION_NAME" />
+          <ScalarProperty Name="POSITION_NAME" ColumnName="POSITION_NAME" />
+          <ScalarProperty Name="GROUP_NAME" ColumnName="GROUP_NAME" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="IDCARD" ColumnName="IDCARD" />
+          <ScalarProperty Name="USER_PIC" ColumnName="USER_PIC" />
+          <ScalarProperty Name="REGISTRATION_NO" ColumnName="REGISTRATION_NO" />
+          <ScalarProperty Name="LABSUPERVISOR_NO" ColumnName="LABSUPERVISOR_NO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TBM_USER">
+      <EntityTypeMapping TypeName="OIS_MASModel.TBM_USER">
+        <MappingFragment StoreEntitySet="TBM_USER">
+          <ScalarProperty Name="LABSUPERVISOR_NO" ColumnName="LABSUPERVISOR_NO" />
+          <ScalarProperty Name="REGISTRATION_NO" ColumnName="REGISTRATION_NO" />
+          <ScalarProperty Name="USER_PIC" ColumnName="USER_PIC" />
+          <ScalarProperty Name="IDCARD" ColumnName="IDCARD" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+          <ScalarProperty Name="SUBDIVISION_ID" ColumnName="SUBDIVISION_ID" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="LNAME_TH" ColumnName="LNAME_TH" />
+          <ScalarProperty Name="FNAME_TH" ColumnName="FNAME_TH" />
+          <ScalarProperty Name="LNAME_EN" ColumnName="LNAME_EN" />
+          <ScalarProperty Name="FNAME_EN" ColumnName="FNAME_EN" />
+          <ScalarProperty Name="PRENAME_ID" ColumnName="PRENAME_ID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS101_SaveUser" FunctionName="OIS_MASModel.Store.sp_MAS101_SaveUser" />
+    <FunctionImportMapping FunctionImportName="sp_MAS101_CancelUser" FunctionName="OIS_MASModel.Store.sp_MAS101_CancelUser" />
+    <FunctionImportMapping FunctionImportName="sp_MAS301_GetUnit" FunctionName="OIS_MASModel.Store.sp_MAS301_GetUnit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS301_GetUnit_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS301_SaveUnit" FunctionName="OIS_MASModel.Store.sp_MAS301_SaveUnit" />
+    <FunctionImportMapping FunctionImportName="sp_MAS301_CancelUnit" FunctionName="OIS_MASModel.Store.sp_MAS301_CancelUnit" />
+    <FunctionImportMapping FunctionImportName="sp_MAS303_CancelInstrument" FunctionName="OIS_MASModel.Store.sp_MAS303_CancelInstrument" />
+    <FunctionImportMapping FunctionImportName="sp_MAS303_GetInstrument" FunctionName="OIS_MASModel.Store.sp_MAS303_GetInstrument">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS303_GetInstrument_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="MODEL" ColumnName="MODEL" />
+          <ScalarProperty Name="SERIALNO" ColumnName="SERIALNO" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="EXPIRE_DATE" ColumnName="EXPIRE_DATE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS303_SaveInstrument" FunctionName="OIS_MASModel.Store.sp_MAS303_SaveInstrument" />
+    <FunctionImportMapping FunctionImportName="sp_MAS203_CancelProvince" FunctionName="OIS_MASModel.Store.sp_MAS203_CancelProvince" />
+    <FunctionImportMapping FunctionImportName="sp_MAS203_GetProvince" FunctionName="OIS_MASModel.Store.sp_MAS203_GetProvince">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS203_GetProvince_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS203_SaveProvince" FunctionName="OIS_MASModel.Store.sp_MAS203_SaveProvince" />
+    <FunctionImportMapping FunctionImportName="sp_MAS102_CancelDivision" FunctionName="OIS_MASModel.Store.sp_MAS102_CancelDivision" />
+    <FunctionImportMapping FunctionImportName="sp_MAS103_CancelSubDivision" FunctionName="OIS_MASModel.Store.sp_MAS103_CancelSubDivision" />
+    <FunctionImportMapping FunctionImportName="sp_MAS103_SaveSubDivision" FunctionName="OIS_MASModel.Store.sp_MAS103_SaveSubDivision" />
+    <FunctionImportMapping FunctionImportName="sp_MAS104_CancelPosition" FunctionName="OIS_MASModel.Store.sp_MAS104_CancelPosition" />
+    <FunctionImportMapping FunctionImportName="sp_MAS104_SavePosition" FunctionName="OIS_MASModel.Store.sp_MAS104_SavePosition" />
+    <FunctionImportMapping FunctionImportName="sp_MAS105_CancelPreName" FunctionName="OIS_MASModel.Store.sp_MAS105_CancelPreName" />
+    <FunctionImportMapping FunctionImportName="sp_MAS105_GetPreName" FunctionName="OIS_MASModel.Store.sp_MAS105_GetPreName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS105_GetPreName_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS105_SavePreName" FunctionName="OIS_MASModel.Store.sp_MAS105_SavePreName" />
+    <FunctionImportMapping FunctionImportName="sp_MAS106_CancelGroup" FunctionName="OIS_MASModel.Store.sp_MAS106_CancelGroup" />
+    <FunctionImportMapping FunctionImportName="sp_MAS106_GetGroup" FunctionName="OIS_MASModel.Store.sp_MAS106_GetGroup">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS106_GetGroup_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS106_SaveGroup" FunctionName="OIS_MASModel.Store.sp_MAS106_SaveGroup" />
+    <FunctionImportMapping FunctionImportName="sp_MAS106_GetGroupPermission" FunctionName="OIS_MASModel.Store.sp_MAS106_GetGroupPermission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS106_GetGroupPermission_Result">
+          <ScalarProperty Name="MENU_NAME" ColumnName="MENU_NAME" />
+          <ScalarProperty Name="PARENT_NAME" ColumnName="PARENT_NAME" />
+          <ScalarProperty Name="IS_ALLOW" ColumnName="IS_ALLOW" />
+          <ScalarProperty Name="MENU_ID" ColumnName="MENU_ID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS106_GetGroupUser" FunctionName="OIS_MASModel.Store.sp_MAS106_GetGroupUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS106_GetGroupUser_Result">
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="POSITION_NAME" ColumnName="POSITION_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS106_SaveGroupPermission" FunctionName="OIS_MASModel.Store.sp_MAS106_SaveGroupPermission" />
+    <FunctionImportMapping FunctionImportName="sp_MAS201_GetCustomer" FunctionName="OIS_MASModel.Store.sp_MAS201_GetCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS201_GetCustomer_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="ADDR_NO" ColumnName="ADDR_NO" />
+          <ScalarProperty Name="MOO" ColumnName="MOO" />
+          <ScalarProperty Name="BUILDING_EN" ColumnName="BUILDING_EN" />
+          <ScalarProperty Name="BUILDING_TH" ColumnName="BUILDING_TH" />
+          <ScalarProperty Name="ALLEY_EN" ColumnName="ALLEY_EN" />
+          <ScalarProperty Name="ALLEY_TH" ColumnName="ALLEY_TH" />
+          <ScalarProperty Name="LANE_EN" ColumnName="LANE_EN" />
+          <ScalarProperty Name="LANE_TH" ColumnName="LANE_TH" />
+          <ScalarProperty Name="ROAD_EN" ColumnName="ROAD_EN" />
+          <ScalarProperty Name="ROAD_TH" ColumnName="ROAD_TH" />
+          <ScalarProperty Name="SUBDISTRICT_EN" ColumnName="SUBDISTRICT_EN" />
+          <ScalarProperty Name="SUBDISTRICT_TH" ColumnName="SUBDISTRICT_TH" />
+          <ScalarProperty Name="DISTRICT_EN" ColumnName="DISTRICT_EN" />
+          <ScalarProperty Name="DISTRICT_TH" ColumnName="DISTRICT_TH" />
+          <ScalarProperty Name="PROVINCE_ID" ColumnName="PROVINCE_ID" />
+          <ScalarProperty Name="POSTCODE" ColumnName="POSTCODE" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="ADDR_EN" ColumnName="ADDR_EN" />
+          <ScalarProperty Name="ADDR_TH" ColumnName="ADDR_TH" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="DEFAULT_LANGUAGE" ColumnName="DEFAULT_LANGUAGE" />
+          <ScalarProperty Name="IS_LANG_TH" ColumnName="IS_LANG_TH" />
+          <ScalarProperty Name="IS_LANG_EN" ColumnName="IS_LANG_EN" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR" ColumnName="ADDR" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS201_CancelCustomer" FunctionName="OIS_MASModel.Store.sp_MAS201_CancelCustomer" />
+    <FunctionImportMapping FunctionImportName="sp_MAS201_SaveCustomer" FunctionName="OIS_MASModel.Store.sp_MAS201_SaveCustomer" />
+    <FunctionImportMapping FunctionImportName="sp_MAS202_CancelCustomerProject" FunctionName="OIS_MASModel.Store.sp_MAS202_CancelCustomerProject" />
+    <FunctionImportMapping FunctionImportName="sp_MAS202_GetCustomerProject" FunctionName="OIS_MASModel.Store.sp_MAS202_GetCustomerProject">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS202_GetCustomerProject_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="ADDR_NO" ColumnName="ADDR_NO" />
+          <ScalarProperty Name="MOO" ColumnName="MOO" />
+          <ScalarProperty Name="BUILDING_EN" ColumnName="BUILDING_EN" />
+          <ScalarProperty Name="BUILDING_TH" ColumnName="BUILDING_TH" />
+          <ScalarProperty Name="ALLEY_EN" ColumnName="ALLEY_EN" />
+          <ScalarProperty Name="ALLEY_TH" ColumnName="ALLEY_TH" />
+          <ScalarProperty Name="LANE_EN" ColumnName="LANE_EN" />
+          <ScalarProperty Name="LANE_TH" ColumnName="LANE_TH" />
+          <ScalarProperty Name="ROAD_EN" ColumnName="ROAD_EN" />
+          <ScalarProperty Name="ROAD_TH" ColumnName="ROAD_TH" />
+          <ScalarProperty Name="SUBDISTRICT_EN" ColumnName="SUBDISTRICT_EN" />
+          <ScalarProperty Name="SUBDISTRICT_TH" ColumnName="SUBDISTRICT_TH" />
+          <ScalarProperty Name="DISTRICT_EN" ColumnName="DISTRICT_EN" />
+          <ScalarProperty Name="DISTRICT_TH" ColumnName="DISTRICT_TH" />
+          <ScalarProperty Name="PROVINCE_ID" ColumnName="PROVINCE_ID" />
+          <ScalarProperty Name="POSTCODE" ColumnName="POSTCODE" />
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="ADDR_EN" ColumnName="ADDR_EN" />
+          <ScalarProperty Name="ADDR_TH" ColumnName="ADDR_TH" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="ADDR" ColumnName="ADDR" />
+          <ScalarProperty Name="DEFAULT_LANGUAGE" ColumnName="DEFAULT_LANGUAGE" />
+          <ScalarProperty Name="IS_LANG_TH" ColumnName="IS_LANG_TH" />
+          <ScalarProperty Name="IS_LANG_EN" ColumnName="IS_LANG_EN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS202_SaveCustomerProject" FunctionName="OIS_MASModel.Store.sp_MAS202_SaveCustomerProject" />
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboCustomer" FunctionName="OIS_MASModel.Store.sp_MAS_ComboCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboCustomer_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="ADDR_NO" ColumnName="ADDR_NO" />
+          <ScalarProperty Name="MOO" ColumnName="MOO" />
+          <ScalarProperty Name="BUILDING_EN" ColumnName="BUILDING_EN" />
+          <ScalarProperty Name="BUILDING_TH" ColumnName="BUILDING_TH" />
+          <ScalarProperty Name="ALLEY_EN" ColumnName="ALLEY_EN" />
+          <ScalarProperty Name="ALLEY_TH" ColumnName="ALLEY_TH" />
+          <ScalarProperty Name="LANE_EN" ColumnName="LANE_EN" />
+          <ScalarProperty Name="LANE_TH" ColumnName="LANE_TH" />
+          <ScalarProperty Name="ROAD_EN" ColumnName="ROAD_EN" />
+          <ScalarProperty Name="ROAD_TH" ColumnName="ROAD_TH" />
+          <ScalarProperty Name="SUBDISTRICT_EN" ColumnName="SUBDISTRICT_EN" />
+          <ScalarProperty Name="SUBDISTRICT_TH" ColumnName="SUBDISTRICT_TH" />
+          <ScalarProperty Name="DISTRICT_EN" ColumnName="DISTRICT_EN" />
+          <ScalarProperty Name="DISTRICT_TH" ColumnName="DISTRICT_TH" />
+          <ScalarProperty Name="PROVINCE_ID" ColumnName="PROVINCE_ID" />
+          <ScalarProperty Name="POSTCODE" ColumnName="POSTCODE" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+          <ScalarProperty Name="DEFAULT_LANGUAGE" ColumnName="DEFAULT_LANGUAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS302_CancelSTDLight" FunctionName="OIS_MASModel.Store.sp_MAS302_CancelSTDLight" />
+    <FunctionImportMapping FunctionImportName="sp_MAS302_GetSTDLight" FunctionName="OIS_MASModel.Store.sp_MAS302_GetSTDLight">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS302_GetSTDLight_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="TYPE_NAME" ColumnName="TYPE_NAME" />
+          <ScalarProperty Name="BUILDING_NAME" ColumnName="BUILDING_NAME" />
+          <ScalarProperty Name="STANDARD" ColumnName="STANDARD" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="ALIAS_NAME" ColumnName="ALIAS_NAME" />
+          <ScalarProperty Name="ALIAS_NAME_EN" ColumnName="ALIAS_NAME_EN" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS302_SaveSTDLight" FunctionName="OIS_MASModel.Store.sp_MAS302_SaveSTDLight" />
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboProvince" FunctionName="OIS_MASModel.Store.sp_MAS_ComboProvince">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboProvince_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboReportCode" FunctionName="OIS_MASModel.Store.sp_MAS_ComboReportCode">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboReportCode_Result">
+          <ScalarProperty Name="REPORT_GROUP" ColumnName="REPORT_GROUP" />
+          <ScalarProperty Name="REPORT_CODE" ColumnName="REPORT_CODE" />
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="REPORT_TYPE" ColumnName="REPORT_TYPE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboCustomerProject" FunctionName="OIS_MASModel.Store.sp_MAS_ComboCustomerProject">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboCustomerProject_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME_EN" ColumnName="NAME_EN" />
+          <ScalarProperty Name="NAME_TH" ColumnName="NAME_TH" />
+          <ScalarProperty Name="ADDR_NO" ColumnName="ADDR_NO" />
+          <ScalarProperty Name="MOO" ColumnName="MOO" />
+          <ScalarProperty Name="BUILDING_EN" ColumnName="BUILDING_EN" />
+          <ScalarProperty Name="BUILDING_TH" ColumnName="BUILDING_TH" />
+          <ScalarProperty Name="ALLEY_EN" ColumnName="ALLEY_EN" />
+          <ScalarProperty Name="ALLEY_TH" ColumnName="ALLEY_TH" />
+          <ScalarProperty Name="LANE_EN" ColumnName="LANE_EN" />
+          <ScalarProperty Name="LANE_TH" ColumnName="LANE_TH" />
+          <ScalarProperty Name="ROAD_EN" ColumnName="ROAD_EN" />
+          <ScalarProperty Name="ROAD_TH" ColumnName="ROAD_TH" />
+          <ScalarProperty Name="SUBDISTRICT_EN" ColumnName="SUBDISTRICT_EN" />
+          <ScalarProperty Name="SUBDISTRICT_TH" ColumnName="SUBDISTRICT_TH" />
+          <ScalarProperty Name="DISTRICT_EN" ColumnName="DISTRICT_EN" />
+          <ScalarProperty Name="DISTRICT_TH" ColumnName="DISTRICT_TH" />
+          <ScalarProperty Name="PROVINCE_ID" ColumnName="PROVINCE_ID" />
+          <ScalarProperty Name="POSTCODE" ColumnName="POSTCODE" />
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="DEFAULT_LANGUAGE" ColumnName="DEFAULT_LANGUAGE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboInstrument" FunctionName="OIS_MASModel.Store.sp_MAS_ComboInstrument">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboInstrument_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="MODEL" ColumnName="MODEL" />
+          <ScalarProperty Name="SERIALNO" ColumnName="SERIALNO" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboUser" FunctionName="OIS_MASModel.Store.sp_MAS_ComboUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboUser_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PRENAME_ID" ColumnName="PRENAME_ID" />
+          <ScalarProperty Name="FNAME_EN" ColumnName="FNAME_EN" />
+          <ScalarProperty Name="LNAME_EN" ColumnName="LNAME_EN" />
+          <ScalarProperty Name="FNAME_TH" ColumnName="FNAME_TH" />
+          <ScalarProperty Name="LNAME_TH" ColumnName="LNAME_TH" />
+          <ScalarProperty Name="NICKNAME" ColumnName="NICKNAME" />
+          <ScalarProperty Name="IDCARD" ColumnName="IDCARD" />
+          <ScalarProperty Name="BIRTHDATE" ColumnName="BIRTHDATE" />
+          <ScalarProperty Name="STARTDATE" ColumnName="STARTDATE" />
+          <ScalarProperty Name="DIVISION_ID" ColumnName="DIVISION_ID" />
+          <ScalarProperty Name="SUBDIVISION_ID" ColumnName="SUBDIVISION_ID" />
+          <ScalarProperty Name="POSITION_ID" ColumnName="POSITION_ID" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+          <ScalarProperty Name="PASS" ColumnName="PASS" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_DialogCustomerLocation" FunctionName="OIS_MASModel.Store.sp_MAS_DialogCustomerLocation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_DialogCustomerLocation_Result">
+          <ScalarProperty Name="CUSTOMER_ID" ColumnName="CUSTOMER_ID" />
+          <ScalarProperty Name="LOC_NAME_LV3" ColumnName="LOC_NAME_LV3" />
+          <ScalarProperty Name="LOC_NAME_LV2" ColumnName="LOC_NAME_LV2" />
+          <ScalarProperty Name="LOC_NAME" ColumnName="LOC_NAME" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="CUSTOMER_NAME" ColumnName="CUSTOMER_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS306_CancelConditionLight" FunctionName="OIS_MASModel.Store.sp_MAS306_CancelConditionLight" />
+    <FunctionImportMapping FunctionImportName="sp_MAS306_GetConditionLight" FunctionName="OIS_MASModel.Store.sp_MAS306_GetConditionLight">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS306_GetConditionLight_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS306_SaveConditionLight" FunctionName="OIS_MASModel.Store.sp_MAS306_SaveConditionLight" />
+    <FunctionImportMapping FunctionImportName="sp_MAS304_CancelMethodAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS304_CancelMethodAnalysis" />
+    <FunctionImportMapping FunctionImportName="sp_MAS304_GetMethodAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS304_GetMethodAnalysis">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS304_GetMethodAnalysis_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="INSTITUTION_ID" ColumnName="INSTITUTION_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="INSTITUTION_STD_NAME" ColumnName="INSTITUTION_STD_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS304_SaveMethodAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS304_SaveMethodAnalysis" />
+    <FunctionImportMapping FunctionImportName="sp_MAS305_CancelParameterAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS305_CancelParameterAnalysis" />
+    <FunctionImportMapping FunctionImportName="sp_MAS305_GetParameterAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS305_GetParameterAnalysis">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS305_GetParameterAnalysis_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="METHOD_ID" ColumnName="METHOD_ID" />
+          <ScalarProperty Name="UNIT_ID" ColumnName="UNIT_ID" />
+          <ScalarProperty Name="STANDARD_THAI" ColumnName="STANDARD_THAI" />
+          <ScalarProperty Name="STANDARD_ACGIH" ColumnName="STANDARD_ACGIH" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="METHOD_NAME" ColumnName="METHOD_NAME" />
+          <ScalarProperty Name="UNIT_NAME" ColumnName="UNIT_NAME" />
+          <ScalarProperty Name="TOOL_PICK_NAME" ColumnName="TOOL_PICK_NAME" />
+          <ScalarProperty Name="TOOL_ANALYSIS_NAME" ColumnName="TOOL_ANALYSIS_NAME" />
+          <ScalarProperty Name="CEILING_LIMIT" ColumnName="CEILING_LIMIT" />
+          <ScalarProperty Name="TOOL_PICK_ID" ColumnName="TOOL_PICK_ID" />
+          <ScalarProperty Name="TOOL_ANALYSIS_ID" ColumnName="TOOL_ANALYSIS_ID" />
+          <ScalarProperty Name="ANALYSIS_DETAIL" ColumnName="ANALYSIS_DETAIL" />
+          <ScalarProperty Name="LAB_EXT_ID" ColumnName="LAB_EXT_ID" />
+          <ScalarProperty Name="METHOD_REMARK" ColumnName="METHOD_REMARK" />
+          <ScalarProperty Name="METHOD_REF" ColumnName="METHOD_REF" />
+          <ScalarProperty Name="MRL_VALUE" ColumnName="MRL_VALUE" />
+          <ScalarProperty Name="METHOD_REF_NO" ColumnName="METHOD_REF_NO" />
+          <ScalarProperty Name="MRL_VALUE_DIV" ColumnName="MRL_VALUE_DIV" />
+          <ScalarProperty Name="LOD_VALUE" ColumnName="LOD_VALUE" />
+          <ScalarProperty Name="LOD_VALUE_DIV" ColumnName="LOD_VALUE_DIV" />
+          <ScalarProperty Name="IDL_VALUE" ColumnName="IDL_VALUE" />
+          <ScalarProperty Name="LAB_REMARK" ColumnName="LAB_REMARK" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS305_SaveParameterAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS305_SaveParameterAnalysis" />
+    <FunctionImportMapping FunctionImportName="sp_MAS307_CancelInstitutionSTD" FunctionName="OIS_MASModel.Store.sp_MAS307_CancelInstitutionSTD" />
+    <FunctionImportMapping FunctionImportName="sp_MAS307_GetInstitutionSTD" FunctionName="OIS_MASModel.Store.sp_MAS307_GetInstitutionSTD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS307_GetInstitutionSTD_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHORT_NAME" ColumnName="SHORT_NAME" />
+          <ScalarProperty Name="EDITION_NAME" ColumnName="EDITION_NAME" />
+          <ScalarProperty Name="PAGE_FROM" ColumnName="PAGE_FROM" />
+          <ScalarProperty Name="PAGE_TO" ColumnName="PAGE_TO" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS307_SaveInstitutionSTD" FunctionName="OIS_MASModel.Store.sp_MAS307_SaveInstitutionSTD" />
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboInstitutionSTD" FunctionName="OIS_MASModel.Store.sp_MAS_ComboInstitutionSTD">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboInstitutionSTD_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHORT_NAME" ColumnName="SHORT_NAME" />
+          <ScalarProperty Name="EDITION_NAME" ColumnName="EDITION_NAME" />
+          <ScalarProperty Name="PAGE_FROM" ColumnName="PAGE_FROM" />
+          <ScalarProperty Name="PAGE_TO" ColumnName="PAGE_TO" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboUnit" FunctionName="OIS_MASModel.Store.sp_MAS_ComboUnit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboUnit_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboLabExt" FunctionName="OIS_MASModel.Store.sp_MAS_ComboLabExt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboLabExt_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="REMARK_NAME" ColumnName="REMARK_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS310_CancelLabExt" FunctionName="OIS_MASModel.Store.sp_MAS310_CancelLabExt" />
+    <FunctionImportMapping FunctionImportName="sp_MAS310_GetLabExt" FunctionName="OIS_MASModel.Store.sp_MAS310_GetLabExt">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS310_GetLabExt_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+          <ScalarProperty Name="REMARK_NAME" ColumnName="REMARK_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS310_SaveLabExt" FunctionName="OIS_MASModel.Store.sp_MAS310_SaveLabExt" />
+    <FunctionImportMapping FunctionImportName="sp_MAS308_CancelToolPick" FunctionName="OIS_MASModel.Store.sp_MAS308_CancelToolPick" />
+    <FunctionImportMapping FunctionImportName="sp_MAS308_GetToolPick" FunctionName="OIS_MASModel.Store.sp_MAS308_GetToolPick">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS308_GetToolPick_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS308_SaveToolPick" FunctionName="OIS_MASModel.Store.sp_MAS308_SaveToolPick" />
+    <FunctionImportMapping FunctionImportName="sp_MAS309_CancelToolAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS309_CancelToolAnalysis" />
+    <FunctionImportMapping FunctionImportName="sp_MAS309_GetToolAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS309_GetToolAnalysis">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS309_GetToolAnalysis_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="CRT_NAME" ColumnName="CRT_NAME" />
+          <ScalarProperty Name="UPD_NAME" ColumnName="UPD_NAME" />
+          <ScalarProperty Name="DEL_NAME" ColumnName="DEL_NAME" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_MAS309_SaveToolAnalysis" FunctionName="OIS_MASModel.Store.sp_MAS309_SaveToolAnalysis" />
+    <FunctionImportMapping FunctionImportName="sp_MAS_ComboLanguage" FunctionName="OIS_MASModel.Store.sp_MAS_ComboLanguage">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OIS_MASModel.sp_MAS_ComboLanguage_Result">
+          <ScalarProperty Name="VALUE" ColumnName="VALUE" />
+          <ScalarProperty Name="DISPLAY" ColumnName="DISPLAY" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="TBM_CONDITION_REPORT_WPL">
+      <EntityTypeMapping TypeName="OIS_MASModel.TBM_CONDITION_REPORT_WPL">
+        <MappingFragment StoreEntitySet="TBM_CONDITION_REPORT_WPL">
+          <ScalarProperty Name="DEL_MACHINE" ColumnName="DEL_MACHINE" />
+          <ScalarProperty Name="DEL_DATE" ColumnName="DEL_DATE" />
+          <ScalarProperty Name="DEL_ID" ColumnName="DEL_ID" />
+          <ScalarProperty Name="UPD_MACHINE" ColumnName="UPD_MACHINE" />
+          <ScalarProperty Name="UPD_DATE" ColumnName="UPD_DATE" />
+          <ScalarProperty Name="UPD_ID" ColumnName="UPD_ID" />
+          <ScalarProperty Name="CRT_MACHINE" ColumnName="CRT_MACHINE" />
+          <ScalarProperty Name="CRT_DATE" ColumnName="CRT_DATE" />
+          <ScalarProperty Name="CRT_ID" ColumnName="CRT_ID" />
+          <ScalarProperty Name="SEQ" ColumnName="SEQ" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,10 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Definition\bin\Debug\OIS.Definition.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Definition\bin\Debug\OIS.Definition.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Definition\obj\Debug\OIS.Definition.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Definition\obj\Debug\OIS.Definition.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Definition\obj\Debug\OIS.Definition.pdb
+D:\Ar\SourceCode\OIS\Common\OIS.Definition\bin\Debug\OIS.Definition.dll
+D:\Ar\SourceCode\OIS\Common\OIS.Definition\bin\Debug\OIS.Definition.pdb
+D:\Ar\SourceCode\OIS\Common\OIS.Definition\obj\Debug\OIS.Definition.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\Common\OIS.Definition\obj\Debug\OIS.Definition.dll
+D:\Ar\SourceCode\OIS\Common\OIS.Definition\obj\Debug\OIS.Definition.pdb

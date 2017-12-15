@@ -1,0 +1,14 @@
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\bin\Debug\OIS.Common.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\bin\Debug\OIS.Common.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\bin\Debug\OIS.Definition.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\bin\Debug\OIS.Definition.pdb
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\obj\Debug\OIS.Common.csprojResolveAssemblyReference.cache
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\obj\Debug\OIS.Common.dll
+C:\Users\Athit\Google Drive\ERTC-OIS\OIS\Common\OIS.Common\obj\Debug\OIS.Common.pdb
+D:\Ar\SourceCode\OIS\Common\OIS.Common\bin\Debug\OIS.Common.dll
+D:\Ar\SourceCode\OIS\Common\OIS.Common\bin\Debug\OIS.Common.pdb
+D:\Ar\SourceCode\OIS\Common\OIS.Common\bin\Debug\OIS.Definition.dll
+D:\Ar\SourceCode\OIS\Common\OIS.Common\bin\Debug\OIS.Definition.pdb
+D:\Ar\SourceCode\OIS\Common\OIS.Common\obj\Debug\OIS.Common.csprojResolveAssemblyReference.cache
+D:\Ar\SourceCode\OIS\Common\OIS.Common\obj\Debug\OIS.Common.dll
+D:\Ar\SourceCode\OIS\Common\OIS.Common\obj\Debug\OIS.Common.pdb

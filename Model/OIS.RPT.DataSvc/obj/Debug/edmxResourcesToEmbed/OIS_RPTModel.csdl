@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OIS_RPTModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="OIS_RPTEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="sp_RPT001_GetWorkPlaceLight" ReturnType="Collection(OIS_RPTModel.sp_RPT001_GetWorkPlaceLight_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_REPORT_NUMBER" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_MEASURED_DATE_FROM" Mode="In" Type="DateTime" />
+      <Parameter Name="p_MEASURED_DATE_TO" Mode="In" Type="DateTime" />
+      <Parameter Name="p_MEASURED_BY" Mode="In" Type="String" />
+      <Parameter Name="p_INSTRUMENT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CRT_USER_ID" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT001_GetWorkPlaceLightDt" ReturnType="Collection(OIS_RPTModel.sp_RPT001_GetWorkPlaceLightDt_Result)">
+      <Parameter Name="p_WPL_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT001_SaveWorkPlaceLight" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_REPORT_CODE" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CUSTOMER_LANG" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ADDR" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_PROJECT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CUSTOMER_PROJECT_LANG" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_PROJECT_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_PROJECT_ADDR" Mode="In" Type="String" />
+      <Parameter Name="p_MEASURED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_MEASURED_DATE_TO" Mode="In" Type="DateTime" />
+      <Parameter Name="p_MEASURED_TIME_FROM" Mode="In" Type="Time" />
+      <Parameter Name="p_MEASURED_TIME_TO" Mode="In" Type="Time" />
+      <Parameter Name="p_MEASURED_DATE_NIGHT" Mode="In" Type="DateTime" />
+      <Parameter Name="p_MEASURED_DATE_NIGHT_TO" Mode="In" Type="DateTime" />
+      <Parameter Name="p_MEASURED_TIME_FROM_NIGHT" Mode="In" Type="Time" />
+      <Parameter Name="p_MEASURED_TIME_TO_NIGHT" Mode="In" Type="Time" />
+      <Parameter Name="p_MEASURED_BY" Mode="In" Type="String" />
+      <Parameter Name="p_MEASURED_INSTRUMENT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_REGISTRATION_ID" Mode="In" Type="String" />
+      <Parameter Name="p_LAB_SUPERVISOR_ID" Mode="In" Type="String" />
+      <Parameter Name="p_SHOW_LV3_EACH_PAGE" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOW_LV3_CONT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOW_LV2_CONT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOW_PROJECT_ADDR" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+      <Parameter Name="p_IS_CANCEL" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT001_SaveWorkPlaceLightDt">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_WPL_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_LOC_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_LOC_NAME_LV2" Mode="In" Type="String" />
+      <Parameter Name="p_LOC_NAME_LV3" Mode="In" Type="String" />
+      <Parameter Name="p_STDLIGHT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_STDLIGHT_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_STDLIGHT_STANDARD" Mode="In" Type="Int32" />
+      <Parameter Name="p_RESULT_DAY" Mode="In" Type="Int32" />
+      <Parameter Name="p_RESULT_NIGHT" Mode="In" Type="Int32" />
+      <Parameter Name="p_CONDITION" Mode="In" Type="String" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+      <Parameter Name="p_IS_CANCEL" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT001_GetWorkPlaceLightReport" ReturnType="Collection(OIS_RPTModel.sp_RPT001_GetWorkPlaceLightReport_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT002_GetWorkPlaceAir" ReturnType="Collection(OIS_RPTModel.sp_RPT002_GetWorkPlaceAir_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ANALYSIS_NO" Mode="In" Type="String" />
+      <Parameter Name="p_JOB_NO" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_ANALYTICAL_DATE_FROM" Mode="In" Type="DateTime" />
+      <Parameter Name="p_ANALYTICAL_DATE_TO" Mode="In" Type="DateTime" />
+      <Parameter Name="p_SAMPLING_DATE_FROM" Mode="In" Type="DateTime" />
+      <Parameter Name="p_SAMPLING_DATE_TO" Mode="In" Type="DateTime" />
+      <Parameter Name="p_SAMPLING_BY" Mode="In" Type="String" />
+      <Parameter Name="p_SHOWDELETERECORD" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT002_SaveWorkPlaceAir" ReturnType="Collection(Int32)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_REPORT_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_REPORT_TYPE" Mode="In" Type="String" />
+      <Parameter Name="p_ANALYSYS_NO" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CUSTOMER_ADDR" Mode="In" Type="String" />
+      <Parameter Name="p_CUSTOMER_PROJECT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_CUSTOMER_PROJECT_ADDR" Mode="In" Type="String" />
+      <Parameter Name="p_RECEIVED_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_ANALYTICAL_DATE_FROM" Mode="In" Type="DateTime" />
+      <Parameter Name="p_ANALYTICAL_DATE_TO" Mode="In" Type="DateTime" />
+      <Parameter Name="p_ANALYSIS_ID" Mode="In" Type="String" />
+      <Parameter Name="p_JOB_NO" Mode="In" Type="String" />
+      <Parameter Name="p_SAMPLING_BY" Mode="In" Type="String" />
+      <Parameter Name="p_REGISTRATION_ID" Mode="In" Type="String" />
+      <Parameter Name="p_LAB_SUPERVISOR_ID" Mode="In" Type="String" />
+      <Parameter Name="p_AGENT_FLAG" Mode="In" Type="Boolean" />
+      <Parameter Name="p_AGENT_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_SHOW_LV3_EACH_PAGE" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOW_LV3_CONT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOW_LV2_CONT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_SHOW_PROJECT_ADDR" Mode="In" Type="Boolean" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+      <Parameter Name="p_IS_CANCEL" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT002_SaveWorkPlaceAirDt">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_WPA_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SEQ" Mode="In" Type="Int32" />
+      <Parameter Name="p_LOC_NAME" Mode="In" Type="String" />
+      <Parameter Name="p_LOC_NAME_LV2" Mode="In" Type="String" />
+      <Parameter Name="p_LOC_NAME_LV3" Mode="In" Type="String" />
+      <Parameter Name="p_SAMPLING_DATE" Mode="In" Type="DateTime" />
+      <Parameter Name="p_PARAMETER_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_SAMPLING_TIME" Mode="In" Type="Time" />
+      <Parameter Name="p_AIR_FLOW" Mode="In" Type="Decimal" />
+      <Parameter Name="p_SAMPLING_MINS" Mode="In" Type="Decimal" />
+      <Parameter Name="p_AIR_VOLUME" Mode="In" Type="Decimal" />
+      <Parameter Name="p_RESULT_VALUE" Mode="In" Type="Decimal" />
+      <Parameter Name="p_LESS_RESULT_VALUE" Mode="In" Type="Boolean" />
+      <Parameter Name="p_UNIT_ID" Mode="In" Type="Int32" />
+      <Parameter Name="p_STANDARD_THAI" Mode="In" Type="Decimal" />
+      <Parameter Name="p_STANDARD_ACGIH" Mode="In" Type="Decimal" />
+      <Parameter Name="p_CEILING_LIMIT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_WAIT_RESULT" Mode="In" Type="Boolean" />
+      <Parameter Name="p_REMARK" Mode="In" Type="String" />
+      <Parameter Name="p_USERID" Mode="In" Type="String" />
+      <Parameter Name="p_IS_CANCEL" Mode="In" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT002_GetWorkPlaceAirDt" ReturnType="Collection(OIS_RPTModel.sp_RPT002_GetWorkPlaceAirDt_Result)">
+      <Parameter Name="p_WPL_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_RPT002_GetWorkPlaceAirReport_2" ReturnType="Collection(OIS_RPTModel.sp_RPT002_GetWorkPlaceAirReport_2_Result)">
+      <Parameter Name="p_ID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="TBR_WORK_PLACE_LIGHT_INSTRUMENT" EntityType="OIS_RPTModel.TBR_WORK_PLACE_LIGHT_INSTRUMENT" />
+    <EntitySet Name="TBR_WORK_PLACE_LIGHT_USER" EntityType="OIS_RPTModel.TBR_WORK_PLACE_LIGHT_USER" />
+    <EntitySet Name="TBR_WORK_PLACE_AIR_USER" EntityType="OIS_RPTModel.TBR_WORK_PLACE_AIR_USER" />
+  </EntityContainer>
+  <ComplexType Name="sp_RPT001_GetWorkPlaceLight_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="REPORTNUMBER" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="CUSTOMER_ID" Nullable="false" />
+    <Property Type="String" Name="CUSTOMER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_ADDR" Nullable="false" MaxLength="1000" />
+    <Property Type="Int32" Name="CUSTOMER_PROJECT_ID" Nullable="true" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_ADDR" Nullable="true" MaxLength="1000" />
+    <Property Type="DateTime" Name="MEASURED_DATE" Nullable="true" />
+    <Property Type="Time" Name="MEASURED_TIME_FROM" Nullable="true" />
+    <Property Type="Time" Name="MEASURED_TIME_TO" Nullable="true" />
+    <Property Type="String" Name="MEASURED_BY" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="MEASURED_INSTRUMENT_ID" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="INS_NAME" Nullable="false" MaxLength="322" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="MEASURED_NAME" Nullable="false" MaxLength="301" />
+    <Property Type="String" Name="REPORT_CODE" Nullable="false" MaxLength="10" />
+    <Property Type="DateTime" Name="MEASURED_DATE_NIGHT" Nullable="true" />
+    <Property Type="Time" Name="MEASURED_TIME_FROM_NIGHT" Nullable="true" />
+    <Property Type="Time" Name="MEASURED_TIME_TO_NIGHT" Nullable="true" />
+    <Property Type="String" Name="LAB_SUPERVISOR_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="LAB_SUPERVISOR_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="DateTime" Name="MEASURED_DATE_LIST" Nullable="true" />
+    <Property Type="String" Name="REGISTRATION_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="REGISTRATION_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="DateTime" Name="MEASURED_DATE_TO" Nullable="true" />
+    <Property Type="DateTime" Name="MEASURED_DATE_NIGHT_TO" Nullable="true" />
+    <Property Type="Boolean" Name="SHOW_LV3_EACH_PAGE" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_LV3_CONT" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_LV2_CONT" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_PROJECT_ADDR" Nullable="false" />
+    <Property Type="String" Name="CUSTOMER_LANG" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_LANG" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="sp_RPT001_GetWorkPlaceLightDt_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="WPL_ID" Nullable="false" />
+    <Property Type="String" Name="LOC_NAME" Nullable="false" MaxLength="200" />
+    <Property Type="Int32" Name="STDLIGHT_ID" Nullable="true" />
+    <Property Type="String" Name="STDLIGHT_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="Int32" Name="STDLIGHT_STANDARD" Nullable="false" />
+    <Property Type="Int32" Name="RESULT_DAY" Nullable="true" />
+    <Property Type="Int32" Name="RESULT_NIGHT" Nullable="true" />
+    <Property Type="String" Name="CONDITION" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="LOC_NAME_LV2" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LOC_NAME_LV3" Nullable="true" MaxLength="200" />
+    <Property Type="Int32" Name="SEQ" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_RPT001_GetWorkPlaceLightReport_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="REPORTNUMBER" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="CUSTOMER_ID" Nullable="false" />
+    <Property Type="String" Name="CUSTOMER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_ADDR" Nullable="false" MaxLength="1000" />
+    <Property Type="Int32" Name="CUSTOMER_PROJECT_ID" Nullable="true" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_ADDR" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="MEASURED_DATE" Nullable="true" MaxLength="217" />
+    <Property Type="String" Name="MEASURED_TIME" Nullable="false" MaxLength="29" />
+    <Property Type="String" Name="MEASURED_BY" Nullable="false" MaxLength="360" />
+    <Property Type="String" Name="INSTRUMENT" Nullable="false" MaxLength="322" />
+    <Property Type="Boolean" Name="HAS_NOT_WITHIN_STANDARD" Nullable="true" />
+    <Property Type="Int32" Name="DETAIL_ID" Nullable="true" />
+    <Property Type="String" Name="LOC_NAME_LV3" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="LOC_NAME_LV2" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="LOC_NAME" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="STDLIGHT_ID" Nullable="true" />
+    <Property Type="String" Name="STDLIGHT_NAME" Nullable="true" MaxLength="1000" />
+    <Property Type="Int32" Name="RESULT_DAY" Nullable="true" />
+    <Property Type="Int32" Name="RESULT_NIGHT" Nullable="true" />
+    <Property Type="Int32" Name="STDLIGHT_STANDARD" Nullable="true" />
+    <Property Type="String" Name="RESULT_DAY_STR" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="RESULT_NIGHT_STR" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="STDLIGHT_STANDARD_STR" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="CONDITION" Nullable="true" MaxLength="1000" />
+    <Property Type="Boolean" Name="HAS_PROJECT" Nullable="true" />
+    <Property Type="Boolean" Name="HAS_NIGHT_RESULT" Nullable="true" />
+    <Property Type="String" Name="LABSUPERVISOR_NAME" Nullable="false" MaxLength="303" />
+    <Property Type="String" Name="LABSUPERVISOR_NO" Nullable="false" MaxLength="21" />
+    <Property Type="Boolean" Name="HAS_DAY_RESULT" Nullable="true" />
+    <Property Type="String" Name="REGISTRATION_NAME" Nullable="false" MaxLength="303" />
+    <Property Type="String" Name="REGISTRATION_NO" Nullable="false" MaxLength="7" />
+    <Property Type="Int32" Name="SEQ" Nullable="true" />
+    <Property Type="String" Name="CONT_STR" Nullable="false" MaxLength="5" />
+    <Property Type="Int32" Name="TOTAL_LINE" Nullable="true" />
+    <Property Type="Int32" Name="TOTAL_LINE_LV3" Nullable="false" />
+    <Property Type="Int32" Name="TOTAL_LINE_LV2" Nullable="false" />
+    <Property Type="Int32" Name="TOTAL_LINE_SHOW" Nullable="true" />
+    <Property Type="Boolean" Name="SHOW_LV3_EACH_PAGE" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_LV3_CONT" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_LV2_CONT" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_PROJECT_ADDR" Nullable="false" />
+    <Property Type="String" Name="REVISION" Nullable="false" MaxLength="31" />
+  </ComplexType>
+  <ComplexType Name="sp_RPT002_GetWorkPlaceAir_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="DateTime" Name="REPORT_DATE" Nullable="false" />
+    <Property Type="String" Name="ANALYSYS_NO" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CUSTOMER_ID" Nullable="false" />
+    <Property Type="Int32" Name="CUSTOMER_PROJECT_ID" Nullable="true" />
+    <Property Type="DateTime" Name="RECEIVED_DATE" Nullable="true" />
+    <Property Type="DateTime" Name="ANALYTICAL_DATE_FROM" Nullable="true" />
+    <Property Type="DateTime" Name="ANALYTICAL_DATE_TO" Nullable="true" />
+    <Property Type="String" Name="ANALYSIS_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="JOB_NO" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SAMPLING_BY" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="REGISTRATION_ID" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="LAB_SUPERVISOR_ID" Nullable="true" MaxLength="20" />
+    <Property Type="Boolean" Name="AGENT_FLAG" Nullable="false" />
+    <Property Type="String" Name="AGENT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="ANALYTICAL_DATE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="SAMPLING_NAME" Nullable="false" MaxLength="301" />
+    <Property Type="String" Name="REGISTRATION_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="LAB_SUPERVISOR_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="CRT_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="CUSTOMER_NAME" Nullable="false" MaxLength="500" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_NAME" Nullable="true" MaxLength="500" />
+    <Property Type="Boolean" Name="SHOW_LV3_EACH_PAGE" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_LV3_CONT" Nullable="false" />
+    <Property Type="Boolean" Name="SHOW_LV2_CONT" Nullable="false" />
+    <Property Type="String" Name="REPORT_TYPE" Nullable="false" MaxLength="10" />
+    <Property Type="Boolean" Name="IS_WA" Nullable="true" />
+    <Property Type="Boolean" Name="IS_AWA" Nullable="true" />
+    <Property Type="String" Name="ANALYSYS_NO_DISP" Nullable="false" MaxLength="91" />
+    <Property Type="Boolean" Name="SHOW_PROJECT_ADDR" Nullable="false" />
+    <Property Type="String" Name="CUSTOMER_ADDR" Nullable="true" MaxLength="1000" />
+    <Property Type="String" Name="CUSTOMER_PROJECT_ADDR" Nullable="true" MaxLength="1000" />
+  </ComplexType>
+  <ComplexType Name="sp_RPT002_GetWorkPlaceAirDt_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="Int32" Name="WPA_ID" Nullable="false" />
+    <Property Type="Int32" Name="SEQ" Nullable="false" />
+    <Property Type="String" Name="LOC_NAME" Nullable="false" MaxLength="200" />
+    <Property Type="String" Name="LOC_NAME_LV2" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="LOC_NAME_LV3" Nullable="true" MaxLength="200" />
+    <Property Type="DateTime" Name="SAMPLING_DATE" Nullable="false" />
+    <Property Type="Int32" Name="PARAMETER_ID" Nullable="false" />
+    <Property Type="Time" Name="SAMPLING_TIME" Nullable="false" />
+    <Property Type="Decimal" Name="AIR_FLOW" Nullable="true" Precision="10" Scale="5" />
+    <Property Type="Int32" Name="SAMPLING_MINS" Nullable="false" />
+    <Property Type="Decimal" Name="AIR_VOLUME" Nullable="true" Precision="10" Scale="5" />
+    <Property Type="Decimal" Name="RESULT_VALUE" Nullable="false" Precision="10" Scale="5" />
+    <Property Type="Boolean" Name="LESS_RESULT_VALUE" Nullable="false" />
+    <Property Type="Int32" Name="UNIT_ID" Nullable="false" />
+    <Property Type="Decimal" Name="STANDARD_THAI" Nullable="true" Precision="10" Scale="5" />
+    <Property Type="Decimal" Name="STANDARD_ACGIH" Nullable="true" Precision="10" Scale="5" />
+    <Property Type="Boolean" Name="CEILING_LIMIT" Nullable="false" />
+    <Property Type="String" Name="CRT_ID" Nullable="false" MaxLength="20" />
+    <Property Type="DateTime" Name="CRT_DATE" Nullable="false" Precision="23" />
+    <Property Type="String" Name="CRT_MACHINE" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="UPD_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="UPD_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="UPD_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="DEL_ID" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DEL_DATE" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DEL_MACHINE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="PARAMETER_NAME" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="CRT_NAME" Nullable="false" MaxLength="201" />
+    <Property Type="String" Name="UPD_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="DEL_NAME" Nullable="true" MaxLength="201" />
+    <Property Type="String" Name="UNIT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="MRL_VALUE" Nullable="true" Precision="10" Scale="3" />
+    <Property Type="String" Name="REMARK" Nullable="true" MaxLength="1000" />
+    <Property Type="Boolean" Name="WAIT_RESULT" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_RPT002_GetWorkPlaceAirReport_2_Result">
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="CUSTOMER_NAME_EN" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CUSTOMER_NAME_TH" Nullable="true" MaxLength="500" />
+    <Property Type="String" Name="CUSTOMER_ADDRNO" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="CUSTOMER_MOO" Nullable="true" />
+    <Property Type="String" Name="CUSTOMER_ROAD" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_SUBDISTRICT" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_DISTRICT" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_PROVINCE" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CUSTOMER_POSTCODE" Nullable="true" MaxLength="5" />
+    <Property Type="String" Name="CUSTOMER_TEL" Nullable="false" MaxLength="1" />
+    <Property Type="String" Name="AGENT_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="Boolean" Name="AGENT_FLAG" Nullable="false" />
+    <Property Type="String" Name="ANALYST_NAME" Nullable="true" MaxLength="301" />
+    <Property Type="String" Name="PARAMETER_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="LOC_NAME" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="TOOLPICK_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="AIR_FLOW" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="SAMPLING_TIME" Nullable="false" MaxLength="4000" />
+    <Property Type="String" Name="TOOLANALYSIS_NAME" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="RESULT_DISP" Nullable="false" MaxLength="4000" />
+    <Property Type="String" Name="STANDARD_DISP" Nullable="false" MaxLength="4000" />
+    <Property Type="String" Name="SAMPLING_DATE" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="ANALYTICAL_DATE" Nullable="true" MaxLength="4000" />
+    <Property Type="String" Name="ANALYSYS_NO" Nullable="false" MaxLength="91" />
+    <Property Type="String" Name="INST_NAME" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="INST_EDITION" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="INST_PAGE_FROM" Nullable="false" MaxLength="5" />
+    <Property Type="String" Name="INST_PAGE_TO" Nullable="false" MaxLength="5" />
+  </ComplexType>
+  <EntityType Name="TBR_WORK_PLACE_LIGHT_INSTRUMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="MEASURED_INSTRUMENT_ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MEASURED_INSTRUMENT_ID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TBR_WORK_PLACE_LIGHT_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="MEASURED_BY" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MEASURED_BY" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TBR_WORK_PLACE_AIR_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SAMPLING_BY" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="SAMPLING_BY" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

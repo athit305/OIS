@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OIS_RPTModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERTC_OIS.dbo.TBR_WORK_PLACE_AIR_USER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TBR_WORK_PLACE_AIR_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SAMPLING_BY" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="SAMPLING_BY" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERTC_OIS.dbo.TBR_WORK_PLACE_LIGHT_INSTRUMENT' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TBR_WORK_PLACE_LIGHT_INSTRUMENT">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="MEASURED_INSTRUMENT_ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MEASURED_INSTRUMENT_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ERTC_OIS.dbo.TBR_WORK_PLACE_LIGHT_USER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="TBR_WORK_PLACE_LIGHT_USER">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="MEASURED_BY" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MEASURED_BY" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <Function Name="sp_RPT001_GetWorkPlaceLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_REPORT_NUMBER" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_MEASURED_DATE_FROM" Type="date" Mode="In" />
+    <Parameter Name="p_MEASURED_DATE_TO" Type="date" Mode="In" />
+    <Parameter Name="p_MEASURED_BY" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_INSTRUMENT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CRT_USER_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT001_GetWorkPlaceLightDt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_WPL_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT001_GetWorkPlaceLightReport" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT001_SaveWorkPlaceLight" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_REPORT_CODE" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CUSTOMER_LANG" Type="char" Mode="In" />
+    <Parameter Name="p_CUSTOMER_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ADDR" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_PROJECT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CUSTOMER_PROJECT_LANG" Type="char" Mode="In" />
+    <Parameter Name="p_CUSTOMER_PROJECT_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_PROJECT_ADDR" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_MEASURED_DATE" Type="date" Mode="In" />
+    <Parameter Name="p_MEASURED_DATE_TO" Type="date" Mode="In" />
+    <Parameter Name="p_MEASURED_TIME_FROM" Type="time" Mode="In" />
+    <Parameter Name="p_MEASURED_TIME_TO" Type="time" Mode="In" />
+    <Parameter Name="p_MEASURED_DATE_NIGHT" Type="date" Mode="In" />
+    <Parameter Name="p_MEASURED_DATE_NIGHT_TO" Type="date" Mode="In" />
+    <Parameter Name="p_MEASURED_TIME_FROM_NIGHT" Type="time" Mode="In" />
+    <Parameter Name="p_MEASURED_TIME_TO_NIGHT" Type="time" Mode="In" />
+    <Parameter Name="p_MEASURED_BY" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_MEASURED_INSTRUMENT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_REGISTRATION_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LAB_SUPERVISOR_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOW_LV3_EACH_PAGE" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOW_LV3_CONT" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOW_LV2_CONT" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOW_PROJECT_ADDR" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_IS_CANCEL" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT001_SaveWorkPlaceLightDt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_WPL_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_LOC_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LOC_NAME_LV2" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LOC_NAME_LV3" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_STDLIGHT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_STDLIGHT_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_STDLIGHT_STANDARD" Type="int" Mode="In" />
+    <Parameter Name="p_RESULT_DAY" Type="int" Mode="In" />
+    <Parameter Name="p_RESULT_NIGHT" Type="int" Mode="In" />
+    <Parameter Name="p_CONDITION" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_IS_CANCEL" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT002_GetWorkPlaceAir" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ANALYSIS_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_JOB_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_ANALYTICAL_DATE_FROM" Type="date" Mode="In" />
+    <Parameter Name="p_ANALYTICAL_DATE_TO" Type="date" Mode="In" />
+    <Parameter Name="p_SAMPLING_DATE_FROM" Type="date" Mode="In" />
+    <Parameter Name="p_SAMPLING_DATE_TO" Type="date" Mode="In" />
+    <Parameter Name="p_SAMPLING_BY" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOWDELETERECORD" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT002_GetWorkPlaceAirDt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_WPL_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT002_GetWorkPlaceAirReport_2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT002_SaveWorkPlaceAir" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_REPORT_DATE" Type="date" Mode="In" />
+    <Parameter Name="p_REPORT_TYPE" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_ANALYSYS_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CUSTOMER_ADDR" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_CUSTOMER_PROJECT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_CUSTOMER_PROJECT_ADDR" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_RECEIVED_DATE" Type="date" Mode="In" />
+    <Parameter Name="p_ANALYTICAL_DATE_FROM" Type="date" Mode="In" />
+    <Parameter Name="p_ANALYTICAL_DATE_TO" Type="date" Mode="In" />
+    <Parameter Name="p_ANALYSIS_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_JOB_NO" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SAMPLING_BY" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_REGISTRATION_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LAB_SUPERVISOR_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_AGENT_FLAG" Type="bit" Mode="In" />
+    <Parameter Name="p_AGENT_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SHOW_LV3_EACH_PAGE" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOW_LV3_CONT" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOW_LV2_CONT" Type="bit" Mode="In" />
+    <Parameter Name="p_SHOW_PROJECT_ADDR" Type="bit" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_IS_CANCEL" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="sp_RPT002_SaveWorkPlaceAirDt" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="p_ID" Type="int" Mode="In" />
+    <Parameter Name="p_WPA_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SEQ" Type="int" Mode="In" />
+    <Parameter Name="p_LOC_NAME" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LOC_NAME_LV2" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_LOC_NAME_LV3" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_SAMPLING_DATE" Type="date" Mode="In" />
+    <Parameter Name="p_PARAMETER_ID" Type="int" Mode="In" />
+    <Parameter Name="p_SAMPLING_TIME" Type="time" Mode="In" />
+    <Parameter Name="p_AIR_FLOW" Type="numeric" Mode="In" />
+    <Parameter Name="p_SAMPLING_MINS" Type="numeric" Mode="In" />
+    <Parameter Name="p_AIR_VOLUME" Type="numeric" Mode="In" />
+    <Parameter Name="p_RESULT_VALUE" Type="numeric" Mode="In" />
+    <Parameter Name="p_LESS_RESULT_VALUE" Type="bit" Mode="In" />
+    <Parameter Name="p_UNIT_ID" Type="int" Mode="In" />
+    <Parameter Name="p_STANDARD_THAI" Type="numeric" Mode="In" />
+    <Parameter Name="p_STANDARD_ACGIH" Type="numeric" Mode="In" />
+    <Parameter Name="p_CEILING_LIMIT" Type="bit" Mode="In" />
+    <Parameter Name="p_WAIT_RESULT" Type="bit" Mode="In" />
+    <Parameter Name="p_REMARK" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_USERID" Type="nvarchar" Mode="In" />
+    <Parameter Name="p_IS_CANCEL" Type="bit" Mode="In" />
+  </Function>
+  <EntityContainer Name="OIS_RPTModelStoreContainer">
+    <EntitySet Name="TBR_WORK_PLACE_AIR_USER" EntityType="Self.TBR_WORK_PLACE_AIR_USER" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TBR_WORK_PLACE_AIR_USER].[ID] AS [ID], 
+    [TBR_WORK_PLACE_AIR_USER].[SAMPLING_BY] AS [SAMPLING_BY]
+    FROM [dbo].[TBR_WORK_PLACE_AIR_USER] AS [TBR_WORK_PLACE_AIR_USER]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TBR_WORK_PLACE_LIGHT_INSTRUMENT" EntityType="Self.TBR_WORK_PLACE_LIGHT_INSTRUMENT" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TBR_WORK_PLACE_LIGHT_INSTRUMENT].[ID] AS [ID], 
+    [TBR_WORK_PLACE_LIGHT_INSTRUMENT].[MEASURED_INSTRUMENT_ID] AS [MEASURED_INSTRUMENT_ID]
+    FROM [dbo].[TBR_WORK_PLACE_LIGHT_INSTRUMENT] AS [TBR_WORK_PLACE_LIGHT_INSTRUMENT]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="TBR_WORK_PLACE_LIGHT_USER" EntityType="Self.TBR_WORK_PLACE_LIGHT_USER" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [TBR_WORK_PLACE_LIGHT_USER].[ID] AS [ID], 
+    [TBR_WORK_PLACE_LIGHT_USER].[MEASURED_BY] AS [MEASURED_BY]
+    FROM [dbo].[TBR_WORK_PLACE_LIGHT_USER] AS [TBR_WORK_PLACE_LIGHT_USER]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
